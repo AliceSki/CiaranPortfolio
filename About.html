@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <nav><button onclick="window.open('Work.html')"><h2>Work</h2></button>
+<button onclick="window.open('About.html','_blank')"><h2>About</h2></button>
+<button onclick="window.open('https://www.photopea.com/','_blank')"><h2>Play</h2></button>
+<button onclick="window.open('https://www.photopea.com/','_blank')"><h2>Notes</h2></button>
+<button onclick="window.open('https://www.photopea.com/','_blank')"><h2>Contact</h2></button></nav>
+<h1>I'm Ciaran.</h1>
+<div class="AboutMeSection">
+    <img class="Ciaran" src="imageplaceholder.jpg">
+    <div class="AboutMeText">
+    <h3>An accomplished and driven<br> cyber security professional <br></h3>
+    <h2>I’m someone who’s always thinking ahead, staying resilient, and focused
+         <br> on doing things right. In IT and cyber security, I take a structured yet creative approach, always aiming to protect digital spaces as threats keep evolving.<br> I care deeply about the quality of work I deliver, and I’m all in when it comes to meeting client expectations—building 
+         <br> secure, reliable systems that people can count on and trust for the long haul.
+</h2>
+</div>
+</div>
+<br>
+<br>
+<div class="experiences3">
+    <div class="experience">
+        <h4>
+            British Royal Navy | Ministry of Defence (HMS Lancaster)
+        </h4>
+        <h5>
+            Communications Information Systems Specialist (ET1)(WE)CIS
+        </h5>
+        <h5>
+            2020 - 2023
+        </h5>
+    </div>
+    <br>
+    <br>
+     <div class="experience">
+        <h4>
+           Briggs of Burton PLC
+        </h4>
+        <h5>
+           IT Support Technician
+        </h5>
+        <h5>
+            2023 - 2025
+        </h5>
+    </div>
+    <div class="experience">
+        <h4>
+          Node4 LTD
+        </h4>
+        <h5>
+           24/7 Security (SOC) Analyst
+        </h5>
+        <h5>
+            2025 - CURRENT
+        </h5>
+    </div>
+</div>
+<br>
+<br>
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+<br>
+<br>
+<div class="footer_butons" id="CuteBright"></div>
+<script>
+    fetch('Cute_icon.html')
+    .then(res=>res.text())
+    .then (html=>{
+        document.getElementById('CuteBright').innerHTML =html;
+    })
+</script>
+<script src="Functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <nav><button onclick="window.open('Work.html')"><h2>Work</h2></button>
+<button onclick="window.open('About.html','_blank')"><h2>About</h2></button>
+<button onclick="window.open('https://www.photopea.com/','_blank')"><h2>Play</h2></button>
+<button onclick="window.open('https://www.photopea.com/','_blank')"><h2>Notes</h2></button>
+<button onclick="window.open('https://www.photopea.com/','_blank')"><h2>Contact</h2></button></nav>
+<h1>Hi. I am Ciaran.<br>A Cyber Security Analyst.</h1>
+
+<h2>I'm passionate about crafting experiences that are engaging, accessible, <br>and user-centric.</h2><br>
+<div class="clickable_images">
+   <a href="https://blog.cdoherty.co.uk/using-abuseipdb-in-microsoft-sentinel-for-ip-reputation-and-threat-enrichment" >
+    <img id="IMAGE_ONE" src="Image_One.png">
+    </a>
+    <a href="https://blog.cdoherty.co.uk/restoring-microsoft-365-email-security-features-when-using-a-third-party-email-gateway">
+    <img id="IMAGE_TWO" src="image_two.png">
+</a>
+</div>
+<br>
+<h1>
+    Technical Skills
+</h1>
+<h2>
+   <p>
+    I’m someone who’s all about staying ahead of the curve, especially when it comes to
+    <br>
+     IT and cybersecurity. I approach challenges with a solid mix of
+      <br>
+     structure and creativity, always focused on keeping digital spaces 
+     <br>
+     safe as threats keep changing and evolving.
+</p>
+<br>
+<br>
+<p>
+What matters most to me is doing the job right. I put in the work 
+<br>
+to make sure every solution I offer gets the job done, and 
+<br>
+also makes clients feel secure and confident in the long run.
+</p>
+</h2>
+<div class="clickable_images">
+    <img id="IMAGE_THREE" src="IMAGE_THREE.png">
+    <img id="IMAGE_FOUR" src="image_four.png">
+</div>
+<br>
+<br>
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+  <br>
+  <br>
+<div class="footer_butons" id="CuteBright"></div>
+<script>
+    fetch('Cute_icon.html')
+    .then(res=>res.text())
+    .then (html=>{
+        document.getElementById('CuteBright').innerHTML = html;
+    })
+</script>
+<script src="Functions.js"></script>
+</body>
+</html>

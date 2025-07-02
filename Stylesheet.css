@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Acorn';
+  src: url('Acorn-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+    font-family: 'GT-Planar';
+    src: url('GT-Planar-Regular-Trial-BF63bcd9a5c44bb.otf') format('opentype');
+}
+h1{
+    position: relative;
+    text-align: center;
+    font-family : "Acorn";
+    font-size: 60px;
+    font-weight: bolder;
+    color: #025a4e;
+}
+h2{
+    font-family: "GT-Planar";
+    font-size: 20px;
+    color: #4c6763;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    font-size: 20px;
+}
+
+body{
+    background-color: #ede7de;
+}
+nav button {
+    all:unset;
+    color:#025a4e;
+    padding: 5px 15px 5px 15px;
+}
+nav button:active{
+    border: 1px solid black;
+
+}
+nav button:hover{
+      border: transparent;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50px 50px 50px 50px;
+      
+}
+
+
+.clickable_images{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 20vh;
+}
+#IMAGE_ONE{
+    width:52vw;
+    height:38vw;
+    border:transparent;
+    border-radius:50px 50px 50px 50px;
+}
+#IMAGE_ONE:hover{
+    width:54vw;
+    transition: all 0.2s ease;
+}
+#IMAGE_TWO{
+     width:25vw;
+     height:38vw;
+    border:transparent;
+    border-radius:50px 50px 50px 50px;
+}
+#IMAGE_TWO:hover{
+    width:27vw;
+    transition: all 0.2s ease;
+}
+
+#IMAGE_THREE{
+    width:52vw;
+    border:transparent;
+    border-radius:50px 50px 50px 50px;
+}
+#IMAGE_FOUR{
+    width:25vw;
+    border:transparent;
+    border-radius:50px 50px 50px 50px;
+}
+
+.whatever{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* makes the link take the color from the parent, like the h4 */
+}
+p{
+    color:inherit;
+    font: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.cute{
+    all:unset;
+    background-color: #025a4e;
+    height: 15px;
+    width:1px;
+    border: none;
+     transition: height 0.3s ease;
+     overflow:hidden;
+}
+.cute:hover{
+   transform:scaleY(2);
+}
+
+.footer_buttons{
+    display: flex;
+    gap: 45px;
+   justify-content: center;
+   color:black;
+   background-color: transparent;  
+}
+
+
+.buttonwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.darkness {
+    position: absolute;
+    top:-35px;
+    height: 30px;
+    display: none;
+}
+body {
+    transition: background-color 0.3s ease;
+}
+
+.AboutMeSection{
+    display: flex;
+    padding: 0 20vh;
+    justify-content: space-between;
+}
+
+.Ciaran {
+    height:300px;
+}
+h3{
+    position: relative;
+    text-align: center;
+    font-family : "Acorn";
+    font-size: 40px;
+    font-weight: bold;
+    color: #025a4e;
+}
+.AboutMeText{
+    display:flex;
+    flex-direction: column;
+}
+h4{
+    font-family: "GT-Planar";
+    font-size: 20px;
+    color: #d4ede4;
+    text-align: center;
+}
+
+h5{
+      font-family: "GT-Planar";
+    font-size: 16px;
+    color: #ede7de;
+    text-align: center;
+}
+
+.experiences3{
+    display:flex;
+    flex-direction: row;
+    background:transparent;
+    width: fit-content;
+    gap: 20px; 
+    padding-left: 5%;
+    padding-right: 10%;
+}
+.experience{
+    display:flex;
+    flex-direction:column;
+    background-color: #025a4e;
+    border:transparent;
+    border-radius: 50px 50px 50px 50px;
+    padding: 10px 10px 10px 10px;
+    width: 40%;
+}
+.experience h4,
+.experience h5 {
+    margin: 0px;
+}
+
+.experience h4 {
+    margin-bottom: 5px;
+}
+
+.experience h5 {
+    margin: 2px;
+}
+
+
+
+
+
+
+
+
+    
+
+
