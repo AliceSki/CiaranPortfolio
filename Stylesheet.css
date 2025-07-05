@@ -12,25 +12,64 @@ h1{
     position: relative;
     text-align: center;
     font-family : "Acorn";
-    font-size: 60px;
+    font-size: 110px;
     font-weight: bolder;
     color: #025a4e;
+    letter-spacing: -3px;
 }
 h2{
     font-family: "GT-Planar";
     font-size: 20px;
     color: #4c6763;
     text-align: center;
+    font-weight: 200;
 }
 
 nav{
+    justify-self: center;
     text-align: center;
     font-size: 20px;
+    position: sticky;
+    top:20px;
+    width:fit-content;
+   
 }
 
-body{
-    background-color: #ede7de;
+nav.scrolled{
+    background-color:rgba(255, 255, 255, 0.5);
+    border:transparent;
+    border-radius:50px 50px 50px 50px;
+
 }
+
+body {
+  margin: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(237, 231, 221, 1) 100%
+    ),
+    linear-gradient(
+      to right,
+      #d7e0ce,
+      #dee7b4,
+      #e0e8b7,
+      #e7edb7,
+      #e1ebb7,
+      #dae4c4
+    );
+  background-repeat: no-repeat;
+  background-size: 100% 50vh, 100% 50vh;
+  background-position: top, top;
+background-color: #ede7dd;
+
+}
+
+
+
+
+
 nav button {
     all:unset;
     color:#025a4e;
@@ -111,6 +150,20 @@ p{
     border: none;
      transition: height 0.3s ease;
      overflow:hidden;
+     z-index:1;
+}
+
+
+.cute::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -15px;
+  right: -15px;
+  /* Invisible area */
+  background: transparent;
+  z-index: 0;
 }
 .cute:hover{
    transform:scaleY(2);
@@ -129,7 +182,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position:relative;
 }
 
 .darkness {
@@ -155,7 +208,7 @@ h3{
     position: relative;
     text-align: center;
     font-family : "Acorn";
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: #025a4e;
 }
@@ -179,9 +232,8 @@ h5{
 
 .experiences3{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     background:transparent;
-    width: fit-content;
     gap: 20px; 
     padding-left: 5%;
     padding-right: 10%;
@@ -193,11 +245,12 @@ h5{
     border:transparent;
     border-radius: 50px 50px 50px 50px;
     padding: 10px 10px 10px 10px;
-    width: 40%;
+    text-align: left;
 }
 .experience h4,
 .experience h5 {
     margin: 0px;
+    text-align: left;
 }
 
 .experience h4 {
@@ -207,6 +260,22 @@ h5{
 .experience h5 {
     margin: 2px;
 }
+
+.experience:nth-child(1){
+    margin-left: auto;
+    width: 20%;
+}
+
+.experience:nth-child(2){
+    margin-left: 400px;
+    width: 40%;
+}
+
+.experience:nth-child(3){
+    margin-left: auto;
+    width: 70%;
+}
+
 
 
 

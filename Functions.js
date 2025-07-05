@@ -13,19 +13,37 @@ function showicon(button) {
      const theme = icon.getAttribute("data-theme");
 
     if (theme === "dark") {
-        document.body.style.backgroundColor = "#233831";
+        document.body.style.backgroundColor = "#233831"; 
+        document.body.style.margin = "0";
+        document.body.style.background = `
+            linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(35, 56, 49, 1) 100%
+            ),
+            linear-gradient(
+                to right,
+                #5d6a58,
+                #576538,
+                #58632d,
+                #62672d,
+                #556433,
+                #3c6049
+            )
+        `;
         const h1s = document.getElementsByTagName("h1");
 
 for (let i = 0; i < h1s.length; i++) {
     h1s[i].style.color = "#8fdcc2";
 }
+
         const h2s = document.getElementsByTagName("h2")
 for (let i=0; i<h2s.length;i++){
-    h2s[i].style.color = "#d4ede4"
+    h2s[i].style.color = "#d4ede4";
 }
     const h3s = document.getElementsByTagName("h3")
     for(let i=0;i<h3s.length;i++){
-        h3s[i].style.color = "#8fdcc2"
+        h3s[i].style.color = "#8fdcc2";
     }
     const h4s = document.getElementsByTagName("h4")
     for(let i=0;i<h4s.length;i++){
@@ -64,5 +82,16 @@ experiences.forEach(exp => {
         }
     }
 }
+
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+
 
 
