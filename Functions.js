@@ -13,7 +13,10 @@ function showicon(button) {
      const theme = icon.getAttribute("data-theme");
 
     if (theme === "dark") {
-        document.body.style.backgroundColor = "#233831"; 
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100% 50vh, 100% 50vh";
+        document.body.style.backgroundPosition = "top, top";
+        document.body.style.backgroundColor = "#233831";
         document.body.style.margin = "0";
         document.body.style.background = `
             linear-gradient(
@@ -32,6 +35,8 @@ function showicon(button) {
 for (let i = 0; i < h1s.length; i++) {
     h1s[i].style.color = "#8fdcc2";
 }
+
+
 const softskillscolor = document.querySelectorAll(".softskillbox");
 softskillscolor.forEach(section=> {section.style.backgroundColor="#234138";
 
