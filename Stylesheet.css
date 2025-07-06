@@ -274,6 +274,28 @@ h5{
 .experience:nth-child(3){
     margin-left: auto;
     width: 70%;
+} 
+.softskillbox{
+    display:flex;
+    flex-direction:column;
+    border:transparent;
+    background-color:#f4eee6;
+    border-radius:50px 50px 50px 50px;
+    margin-left:40px;
+    margin-right:40px;
+    padding: 10px 50px 10px 50px;
+}
+
+.skills2{
+    display:flex;
+}
+
+.skills4{
+    display:flex;
+}
+
+.softskillbox h3{
+    font-size:35px;
 }
 
 

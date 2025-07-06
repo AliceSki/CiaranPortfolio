@@ -24,10 +24,6 @@ function showicon(button) {
             linear-gradient(
                 to right,
                 #5d6a58,
-                #576538,
-                #58632d,
-                #62672d,
-                #556433,
                 #3c6049
             )
         `;
@@ -36,7 +32,11 @@ function showicon(button) {
 for (let i = 0; i < h1s.length; i++) {
     h1s[i].style.color = "#8fdcc2";
 }
+const softskillscolor = document.querySelectorAll(".softskillbox");
+softskillscolor.forEach(section=> {section.style.backgroundColor="#234138";
 
+}
+)
         const h2s = document.getElementsByTagName("h2")
 for (let i=0; i<h2s.length;i++){
     h2s[i].style.color = "#d4ede4";
