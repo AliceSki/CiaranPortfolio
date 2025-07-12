@@ -13,23 +13,8 @@ function showicon(button) {
      const theme = icon.getAttribute("data-theme");
 
     if (theme === "dark") {
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "100% 50vh, 100% 50vh";
-        document.body.style.backgroundPosition = "top, top";
-        document.body.style.backgroundColor = "#233831";
-        document.body.style.margin = "0";
-        document.body.style.background = `
-            linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0) 0%,
-                rgba(35, 56, 49, 1) 100%
-            ),
-            linear-gradient(
-                to right,
-                #5d6a58,
-                #3c6049
-            )
-        `;
+        document.body.classList.remove("light-theme");
+        document.body.classList.add("dark-theme");
         const h1s = document.getElementsByTagName("h1");
 
 for (let i = 0; i < h1s.length; i++) {
@@ -64,7 +49,10 @@ experiences.forEach(exp => {
     exp.style.backgroundColor = "#8fdcc2";
 });
     } else if (theme === "light") {
-        document.body.style.backgroundColor = "#ede7de"; // or any light color
+        document.body.classList.remove("dark-theme");
+        document.body.classList.add("light-theme");
+  
+ // or any light color
         const h1s = document.getElementsByTagName("h1");
         for (let i=0; i<h1s.length;i++){
             h1s[i].style.color = "#025a4e";
@@ -97,6 +85,3 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
-
-
-

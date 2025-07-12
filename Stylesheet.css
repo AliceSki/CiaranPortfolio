@@ -36,37 +36,223 @@ nav{
 }
 
 nav.scrolled{
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(10px);
     border:transparent;
     border-radius:50px 50px 50px 50px;
-
+    z-index: 1;
 }
 
-body {
+:root{
+    --gradient1: linear-gradient(135deg,#c9dfce,#cde5bf,#d6ecb4,#e2ecbf,#e6eaba,#e8e8ca);
+    --gradient2: linear-gradient(135deg,#d7e0ce,#dee7b4,#e0e8b7,#e7edb7,#e1ebb7,#dae4c4);
+    --gradient3: linear-gradient(135deg, #e7dfbd,#e7e0d0,#e5dfb8,#cfddb1,#d5e0c5,#e3e2d2);
+    --gradient4: linear-gradient(135deg, #356a53, #326a38,#2c5e35,#607d32,#5a7348,#475c49);
+    --gradient5: linear-gradient(135deg,#546a42, #546951, #536755,#456b38,#33712f,#326a40,#2c5d42 );
+    --gradient6: linear-gradient(135deg, #616a3c,#5e6851,#586352,#536047,#48563c,#384c32,#4e6632,#40692d,#346c2e,#326736,#30583f);
+    --gradient7: linear-gradient(135deg, #5b6a36,#5a6945,#576753,#596555,#596147,#5d613a,#4d5c2d,#475f2e,#3e5534,#394a3c);
+    --gradient8: linear-gradient(135deg,#3c6a30,#3c6741,#3a6255,#395a53,#335344,#385135,#42552d,#3f5731,#425a31,#415933,#345338);
+    --gradient9: linear-gradient(135deg, #5b6a33,#5a644b,#565c53,#51564d,#49503e,#3b4f2f,#32592d,#325f2e,#306033,#2d5d35,#2d5837,#294f38);
+}
+
+body{
   margin: 0;
-  background: 
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(237, 231, 221, 1) 100%
-    ),
-    linear-gradient(
-      to right,
-      #d7e0ce,
-      #dee7b4,
-      #e0e8b7,
-      #e7edb7,
-      #e1ebb7,
-      #dae4c4
-    );
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(237, 231, 221, 1) 100%);
   background-repeat: no-repeat;
-  background-size: 100% 50vh, 100% 50vh;
-  background-position: top, top;
-background-color: #ede7dd;
+  background-size: 100% 50vh;
+  background-position: top;
+  background-color: #ede7dd;
+  position: relative; /* Needed for the overlay child */
+  overflow-x: hidden;
+}
 
+.animated-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.animated-gradient .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeGradient 45s infinite;
+}
+
+.animated-gradient .layer:nth-child(1) {
+  background: var(--gradient1);
+  animation-delay: 0s;
+}
+.animated-gradient .layer:nth-child(2) {
+  background: var(--gradient2);
+  animation-delay: 15s;
+}
+.animated-gradient .layer:nth-child(3) {
+  background: var(--gradient3);
+  animation-delay: 30s;
+}
+
+@keyframes fadeGradient {
+  0%, 100% { opacity: 0; }
+  10%, 33% { opacity: 1; }
+  43%, 100% { opacity: 0; }
+}
+
+.animated-gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* adjust as needed for smoothness */
+  background: linear-gradient(to bottom, transparent, #ede7dd);
+  pointer-events: none;
 }
 
 
+
+body.dark-theme {
+  margin: 0;
+  background:
+  linear-gradient(to bottom,rgba(0, 0, 0, 0) 0%,rgba(35, 56, 49, 1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 50vh;
+  background-position: top;
+  background-color: #233831;
+  position: relative; /* Needed for the overlay child */
+  overflow-x: hidden;
+}
+
+  body.dark-theme .animated-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body.dark-theme .animated-gradient .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeGradientDark 50s infinite;
+}
+
+@keyframes fadeGradientDark {
+  0%, 100% { opacity: 0; }
+  10%, 33% { opacity: 1; }
+  43%, 100% { opacity: 0; }
+}
+
+body.dark-theme .animated-gradient .layer:nth-child(1) {
+  background: var(--gradient4);
+  animation-delay: 0s;
+}
+body.dark-theme .animated-gradient .layer:nth-child(2) {
+  background: var(--gradient5);
+  animation-delay: 10s;
+}
+body.dark-theme .animated-gradient .layer:nth-child(3) {
+  background: var(--gradient6);
+  animation-delay: 20s;
+}
+body.dark-theme .animated-gradient .layer:nth-child(4) {
+  background: var(--gradient7);
+  animation-delay: 30s;
+}
+body.dark-theme .animated-gradient .layer:nth-child(5) {
+  background: var(--gradient8);
+  animation-delay: 40s;  
+}
+body.dark-theme .animated-gradient .layer:nth-child(6) {
+  background: var(--gradient9);
+  animation-delay: 50s;  
+}
+
+body.dark-theme .animated-gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* adjust as needed for smoothness */
+  background: linear-gradient(to bottom, transparent, #233831);
+  pointer-events: none;
+}
+
+
+body.light-theme .animated-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body.light-theme .animated-gradient .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeGradient 45s infinite;
+}
+
+body.light-theme .animated-gradient .layer:nth-child(1) {
+  background: var(--gradient1);
+  animation-delay: 0s;
+}
+body.light-theme .animated-gradient .layer:nth-child(2) {
+  background: var(--gradient2);
+  animation-delay: 15s;
+}
+body.light-theme .animated-gradient .layer:nth-child(3) {
+  background: var(--gradient3);
+  animation-delay: 30s;
+}
+
+@keyframes fadeGradient {
+  0%, 100% { opacity: 0; }
+  10%, 33% { opacity: 1; }
+  43%, 100% { opacity: 0; }
+}
+
+
+
+
+
+body.light-theme .animated-gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* adjust as needed for smoothness */
+  background: linear-gradient(to bottom, transparent, #ede7dd);
+  pointer-events: none;
+}
 
 
 
@@ -83,6 +269,7 @@ nav button:hover{
       border: transparent;
       background-color: rgba(255, 255, 255, 0.5);
       border-radius: 50px 50px 50px 50px;
+
       
 }
 
@@ -299,10 +486,81 @@ h5{
 }
 
 
+.scrollSection {
+  overflow: hidden;
+  width: 100%;
+  background: white;
+}
+
+.imagesScroll {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.imagesScroll img {
+  width: 210px; 
+  height: auto;
+  margin-right: 20px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.gridAwards{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.gridOne{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.gridTwo{
+    display:flex;
+    flex-direction:row;
+     align-items:center;
+}
+
+.gridOne img{
+     width: 250px; 
+  height: auto;
+  background:white;
+}
+
+.gridTwo img{
+     width: 250px; 
+  height: auto;
+  background: white;
+}
 
 
+h1:first-of-type {
+  animation: bounceUp 0.6s ease-out;
+}
 
-
+/* Bouncing up animation */
+@keyframes bounceUp {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 
 
