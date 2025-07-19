@@ -495,7 +495,7 @@ h5{
 .imagesScroll {
   display: flex;
   width: fit-content;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 10s linear infinite;
 }
 
 .imagesScroll img {
@@ -517,30 +517,20 @@ h5{
     display:flex;
     flex-direction:column;
     align-items:center;
+    gap:25px;
 }
 
 .gridOne{
     display:flex;
     flex-direction:row;
     align-items:center;
+    gap:20px;
 }
 .gridTwo{
     display:flex;
     flex-direction:row;
      align-items:center;
-}
-
-
-.gridOne img{
-     width: 250px; 
-  height: auto;
-  background:white;
-}
-
-.gridTwo img{
-     width: 250px; 
-  height: auto;
-  background: white;
+     gap:20px;
 }
 
 
@@ -626,6 +616,22 @@ h1:first-of-type {
   }
 }
 
+.AwardImages{
+ width: 20vw;         /* Diameter of your circle */
+  height: 20vw;
+  border-radius: 20px;
+  background-color:white;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.AwardImages img{
+  width:100%;
+  height:100%;
+ object-fit: contain;
+}
 
 
 
