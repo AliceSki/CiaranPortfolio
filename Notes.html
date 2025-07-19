@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+        <div class="animated-gradient">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+</div>
+    <nav><button onclick="window.location.href='index.html'"><h2>Work</h2></button>
+<button onclick="window.location.href='About.html'"><h2>About</h2></button>
+<button onclick="window.location.href='Awards.html'"><h2>Play</h2></button>
+<button onclick="window.location.href='Notes.html'"><h2>Blogs</h2></button>
+<button onclick="window.open('https://www.photopea.com/','_blank')"><h2>Contact</h2></button></nav>
+<h1>Blogs</h1>
+<h2>Some thoughts, relfections and writings of my own.</h2>
+<div class="ListOfBlogs">
+    <a href="https://blog.cdoherty.co.uk/the-role-of-spf-dkim-and-dmarc-in-email-authentication-security" style="display:block;">
+    <div class="Blog1">
+        <div class="blogtext">
+            <h3 style="font-size:20px;text-align: left;  margin-left: 2vh; ">Email Security</h3>
+            <h2>The Role of SPF, DKIM, and DMARC in Email Authentication Security.</h2>
+        </div>
+        <div class="circle-frame">
+            <img class="BlogImages" src="BlogImage1.png">
+        </div>
+    </div>
+    </a>
+    <a href="https://blog.cdoherty.co.uk/microsoft-sentinel-rule-not-saving-etag-error-heres-why" style="display:block;">
+         <div class="Blog1">
+        <div class="blogtext">
+            <h3 style="font-size:20px;text-align: left;  margin-left: 2vh; ">ETag Errors</h3>
+            <h2>Microsoft Sentinel Rule Not Saving?</h2>
+        </div>
+        <div class="circle-frame">
+            <img class="BlogImages" src="BlogImage2.png">
+        </div>
+    </div>
+    </a>
+    <a href="https://blog.cdoherty.co.uk/preventing-risky-oauth-consent-how-to-stop-users-granting-access-to-unverified-apps-in-microsoft-entra-id" style="display:block;">
+             <div class="Blog1">
+        <div class="blogtext">
+            <h3 style="font-size:20px;text-align: left;  margin-left: 2vh; ">Preventing Risky OAuth Consent</h3>
+            <h2>How to Stop Users Granting Access to Unverified Apps in Microsoft Entra ID.</h2>
+        </div>
+        <div class="circle-frame">
+            <img class="BlogImages" src="BlogImage3.png">
+        </div>
+    </div>
+    </a>
+    <a href="https://blog.cdoherty.co.uk/cisco-umbrella-entra-id-idp-federation-setup-and-azure-sentinel-siem-integration" style="display:block;">
+             <div class="Blog1">
+        <div class="blogtext">
+            <h3 style="font-size:20px;text-align: left;  margin-left: 2vh; ">Cisco Umbrella: Entra ID IdP</h3>
+            <h2>Federation Setup & Azure Sentinel SIEM Integration</h2>
+        </div>
+        <div class="circle-frame">
+            <img class="BlogImages" src="BlogImage4.png">
+        </div>
+    </div>
+    </a>
+    <a href="https://blog.cdoherty.co.uk/become-a-microsoft-ninja-all-the-free-microsoft-security-training-in-one-place" style="display:block;">
+             <div class="Blog1">
+        <div class="blogtext">
+            <h3 style="font-size:20px;text-align: left;  margin-left: 2vh; ">Become a Microsoft Ninja</h3>
+            <h2>All the Free Microsoft Security Training in One Place.</h2>
+        </div>
+        <div class="circle-frame">
+            <img class="BlogImages" src="BlogImage5.png">
+        </div>
+    </div>
+    </a>
+</div>
+<br>
+<br>
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+  <br>
+  <br>
+<div class="footer_butons" id="CuteBright"></div>
+<br>
+<br>
+<script>
+    fetch('Cute_icon.html')
+    .then(res=>res.text())
+    .then (html=>{
+        document.getElementById('CuteBright').innerHTML = html;
+    })
+</script>
+<script src="Functions.js"></script>
+</body>
+</html>
