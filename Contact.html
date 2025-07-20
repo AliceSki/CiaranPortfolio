@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <div style="border-radius:30px; background-color:#3e5343; padding:.75em 1.4em .75em 1.4em; width:fit-content; margin:20px auto 0 auto;">
+    <h2>Hi</h2>
+    </div>
+     <div style="border-radius:30px; background-color:#3e5343; padding:.75em 1.4em .75em 1.4em; width:fit-content; margin:10px auto 0 auto;">
+    <h2>I'm Ciaran Bot. I'm here to help you with any questions you might have about Seáns work.</h2>
+    </div>
+    <div style="border-radius:30px; background-color:#3e5343; padding:.75em 1.4em .75em 1.4em; width:fit-content; margin:10px auto 0 auto;">
+    <h2>Looking for portfolio</h2>
+    </div>
+    <div style="border-radius:30px; background-color:#3e5343; padding:.75em 1.4em .75em 1.4em; width:fit-content; margin:10px auto 0 auto;">
+    <h2>Are you a recruiter?</h2>
+</div>
+
+  <div style="border-radius:30px; background-color:#3e5343; padding:.75em 1.4em; width:fit-content; margin:10px auto; text-align:center;">
+    <button style="background-color:transparent; border:none;" onclick="showResult('yes')">Yes</button>
+  </div>
+
+   <div style="border-radius:30px; background-color:#3e5343; padding:.75em 1.4em; width:fit-content; margin:10px auto; text-align:center;">
+        <button style="background-color:transparent; border:none;" onclick="showResult('no')">No</button>
+  </div>
+
+ <div id="response" style="text-align:center; margin-top:15px; font-size:20px; color:white;"></div>
+  <script>
+    function showResult(choice) {
+      const responseDiv = document.getElementById('response');
+      if (choice === 'yes') {
+        window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=ciaran@cdoherty.co.uk';
+      } else {
+        responseDiv.innerHTML = '<h2>Thanks for stopping by! I am currently unwilling to share my portfolio!</h2>';
+      }
+    }
+  </script>
+</body>
+</html>
