@@ -121,7 +121,7 @@ body{
 
 
 
-body.dark-theme {
+body.darktheme {
   margin: 0;
   background:
   linear-gradient(to bottom,rgba(0, 0, 0, 0) 0%,rgba(35, 56, 49, 1) 100%);
@@ -133,7 +133,7 @@ body.dark-theme {
   overflow-x: hidden;
 }
 
-  body.dark-theme .animated-gradient {
+  body.darktheme .animated-gradient {
   position: absolute;
   top: 0;
   left: 0;
@@ -143,7 +143,7 @@ body.dark-theme {
   pointer-events: none;
 }
 
-body.dark-theme .animated-gradient .layer {
+body.darktheme .animated-gradient .layer {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -161,32 +161,32 @@ body.dark-theme .animated-gradient .layer {
   43%, 100% { opacity: 0; }
 }
 
-body.dark-theme .animated-gradient .layer:nth-child(1) {
+body.darktheme .animated-gradient .layer:nth-child(1) {
   background: var(--gradient4);
   animation-delay: 0s;
 }
-body.dark-theme .animated-gradient .layer:nth-child(2) {
+body.darktheme .animated-gradient .layer:nth-child(2) {
   background: var(--gradient5);
   animation-delay: 10s;
 }
-body.dark-theme .animated-gradient .layer:nth-child(3) {
+body.darktheme .animated-gradient .layer:nth-child(3) {
   background: var(--gradient6);
   animation-delay: 20s;
 }
-body.dark-theme .animated-gradient .layer:nth-child(4) {
+body.darktheme .animated-gradient .layer:nth-child(4) {
   background: var(--gradient7);
   animation-delay: 30s;
 }
-body.dark-theme .animated-gradient .layer:nth-child(5) {
+body.darktheme .animated-gradient .layer:nth-child(5) {
   background: var(--gradient8);
   animation-delay: 40s;  
 }
-body.dark-theme .animated-gradient .layer:nth-child(6) {
+body.darktheme .animated-gradient .layer:nth-child(6) {
   background: var(--gradient9);
   animation-delay: 50s;  
 }
 
-body.dark-theme .animated-gradient::after {
+body.darktheme .animated-gradient::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -198,7 +198,7 @@ body.dark-theme .animated-gradient::after {
 }
 
 
-body.light-theme .animated-gradient {
+body.lighttheme .animated-gradient {
   position: absolute;
   top: 0;
   left: 0;
@@ -208,7 +208,7 @@ body.light-theme .animated-gradient {
   pointer-events: none;
 }
 
-body.light-theme .animated-gradient .layer {
+body.lighttheme .animated-gradient .layer {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -220,15 +220,15 @@ body.light-theme .animated-gradient .layer {
   animation: fadeGradient 45s infinite;
 }
 
-body.light-theme .animated-gradient .layer:nth-child(1) {
+body.lighttheme .animated-gradient .layer:nth-child(1) {
   background: var(--gradient1);
   animation-delay: 0s;
 }
-body.light-theme .animated-gradient .layer:nth-child(2) {
+body.lighttheme .animated-gradient .layer:nth-child(2) {
   background: var(--gradient2);
   animation-delay: 15s;
 }
-body.light-theme .animated-gradient .layer:nth-child(3) {
+body.lighttheme .animated-gradient .layer:nth-child(3) {
   background: var(--gradient3);
   animation-delay: 30s;
 }
@@ -243,7 +243,7 @@ body.light-theme .animated-gradient .layer:nth-child(3) {
 
 
 
-body.light-theme .animated-gradient::after {
+body.lighttheme .animated-gradient::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -329,55 +329,6 @@ p{
     font-family: inherit;
 }
 
-.cute{
-    all:unset;
-    background-color: #025a4e;
-    height: 15px;
-    width:1px;
-    border: none;
-     transition: height 0.3s ease;
-     overflow:hidden;
-     z-index:1;
-}
-
-
-.cute::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  bottom: -10px;
-  left: -15px;
-  right: -15px;
-  /* Invisible area */
-  background: transparent;
-  z-index: 0;
-}
-.cute:hover{
-   transform:scaleY(2);
-}
-
-.footer_buttons{
-    display: flex;
-    gap: 45px;
-   justify-content: center;
-   color:black;
-   background-color: transparent;  
-}
-
-
-.buttonwrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position:relative;
-}
-
-.darkness {
-    position: absolute;
-    top:-35px;
-    height: 30px;
-    display: none;
-}
 body {
     transition: background-color 0.3s ease;
 }
@@ -489,13 +440,13 @@ h5{
 .scrollSection {
   overflow: hidden;
   width: 100%;
-  background: white;
+  background:  linear-gradient(135deg, #f3eee7 0%, #e3d9cc 100%);
 }
 
 .imagesScroll {
   display: flex;
   width: fit-content;
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-left 15s linear infinite;
 }
 
 .imagesScroll img {
@@ -582,13 +533,65 @@ h5{
   background-color:white;
 }
 
-.dark-theme .Blog1{
+.darktheme .Blog1{
   background-color:#234138;
 }
 
-.dark-theme .Blog1:hover{
+.darktheme .Blog1:hover{
   background-color: #355a4d;
 }
+
+.darktheme h1{
+color: #8fdcc2;
+}
+
+.darktheme h2{
+ color:#d4ede4;
+}
+
+.darktheme .softskillbox{
+  background-color: #234138;
+}
+
+.darktheme h3{
+  color:#8fdcc2;
+}
+
+.darktheme h4{
+  color: #233831;
+}
+
+.darktheme h5{
+  color: #233831;
+}
+
+.darktheme .experience{
+  background-color: #8fdcc2;
+}
+
+.lighttheme h1{
+color:#025a4e;
+}
+
+.lighttheme h2{
+color:#4c6763;
+}
+
+.lighttheme h3{
+  color:#025a4e;
+}
+
+.lighttheme h4{
+  color:#d4ede4;
+}
+
+.lighttheme h5{
+  color:#ede7de;
+}
+
+
+
+
 
 .blogtext{
   display:flex;
@@ -617,7 +620,7 @@ h1:first-of-type {
 }
 
 .AwardImages{
- width: 20vw;         /* Diameter of your circle */
+ width: 20vw;
   height: 20vw;
   border-radius: 20px;
   background-color:white;
@@ -633,9 +636,32 @@ h1:first-of-type {
  object-fit: contain;
 }
 
+#theme-switch{
+  width:50px;
+  height:50px;
+  align-items:center;
+  justify-content: center;
+  display:flex;
+  border-radius:25px;
+  background-color:#ffffff34;
+}
 
+#theme-switch img:last-child{
+  display:none;
+}
 
+.darktheme #theme-switch img:first-child{
+  display:none;
+}
 
-    
+.darktheme #theme-switch img:last-child{
+  display:block;
+}
+
+    .twonav{
+ width: fit-content; /* Or a fixed width like 800px */
+  margin: 0 auto;
+  display:flex;
+    }
 
 

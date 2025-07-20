@@ -12,11 +12,28 @@
   <div class="layer"></div>
   <div class="layer"></div>
 </div>
-    <nav><button onclick="window.location.href='index.html'"><h2>Work</h2></button>
+<div class="twonav">
+ <nav><button onclick="window.location.href='index.html'"><h2>Work</h2></button>
 <button onclick="window.location.href='About.html'"><h2>About</h2></button>
 <button onclick="window.location.href='Awards.html'"><h2>Play</h2></button>
 <button onclick="window.location.href='Notes.html'"><h2>Blogs</h2></button>
 <button onclick="window.open('https://www.photopea.com/','_blank')"><h2>Contact</h2></button></nav>
+<nav><div class="nav_toggle" id="theme"></div></nav>
+</div>
+<script>
+    fetch('themebutton.html')
+    .then(res => res.text())
+    .then(html => {
+        document.getElementById('theme').innerHTML = html;
+
+        // Now that the button exists, run the Functions.js code
+        const script = document.createElement('script');
+        script.src = 'Functions.js';
+        document.body.appendChild(script);
+    });
+</script>
+
+
 <h1 style="margin-bottom:0px;">Hi. I'm Ciaran.<br>A Cyber Security Analyst.</h1>
 <h2>I'm passionate about crafting experiences that are engaging, accessible, <br>and user-centric.</h2>
 <br>
@@ -55,16 +72,6 @@ I stay ahead in IT and cybersecurity by blending structure with creativity<br>
   </script>
   <br>
   <br>
-<div class="footer_butons" id="CuteBright"></div>
-<br>
-<br>
-<script>
-    fetch('Cute_icon.html')
-    .then(res=>res.text())
-    .then (html=>{
-        document.getElementById('CuteBright').innerHTML = html;
-    })
-</script>
-<script src="Functions.js"></script>
+ 
 </body>
 </html>
