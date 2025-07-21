@@ -110,7 +110,7 @@ body.darktheme {
   background:
   linear-gradient(to bottom,rgba(0, 0, 0, 0) 0%,rgba(35, 56, 49, 1) 100%);
   background-repeat: no-repeat;
-  background-size: 100% 30vh;
+  background-size: 100% 25vh;
   background-position: top;
   background-color: #233831;
   position: relative; /* Needed for the overlay child */
@@ -122,7 +122,7 @@ body.darktheme {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70vh;
+  height: 75vh;
   z-index: -1;
   pointer-events: none;
 }
@@ -434,8 +434,8 @@ h5{
 }
 
 .imagesScroll img {
-  width: 260px;
-  height: 250px;
+  width: 30%;
+  height: auto;
   margin-right: 20px;
 }
 
