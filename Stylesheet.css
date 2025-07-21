@@ -98,7 +98,7 @@ body{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100px; /* adjust as needed for smoothness */
+  height: 300px; /* adjust as needed for smoothness */
   background: linear-gradient(to bottom, transparent, #ede7dd);
   pointer-events: none;
 }
@@ -176,7 +176,7 @@ body.darktheme .animated-gradient::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100px; /* adjust as needed for smoothness */
+  height: 300px; /* adjust as needed for smoothness */
   background: linear-gradient(to bottom, transparent, #233831);
   pointer-events: none;
 }
