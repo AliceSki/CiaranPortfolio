@@ -1,0 +1,8 @@
+body.lightheme{
+    background-color:rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(30px);
+}
+body.darktheme{
+ background-color:rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(30px);
+}

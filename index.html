@@ -17,8 +17,16 @@
 <button onclick="window.location.href='About.html'"><h2>About</h2></button>
 <button onclick="window.location.href='Awards.html'"><h2>Awards</h2></button>
 <button onclick="window.location.href='Notes.html'"><h2>Blogs</h2></button>
-<button onclick="window.location.href='Contact.html'"><h2>Contact</h2></button></nav>
+<button id="ContactBtn"><h2>Contact</h2></button></nav>
+
+
+
 <nav><div class="nav_toggle" id="theme"></div></nav>
+</div>
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <div id="contactContent"></div>
+  </div>
 </div>
 <script>
     fetch('themebutton.html')
@@ -72,6 +80,6 @@ I stay ahead in IT and cybersecurity by blending structure with creativity<br>
   </script>
   <br>
   <br>
- 
+ <script src="popup.js"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@ const disabledarktheme = () => {
         darktheme !== "active" ? enabledarktheme(): disabledarktheme()
     })
 
-const nav = document.querySelector("nav");
+const nav = document.querySelector(".twonav");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {
