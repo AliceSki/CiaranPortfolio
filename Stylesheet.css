@@ -430,7 +430,7 @@ h5{
 .darktheme .scrollSection{
   border-radius:20px;
   border:solid 4px;
-  border-color: #8fdcc2;
+  border-color: #233831;
 }
 
 .imagesScroll {
@@ -621,7 +621,7 @@ h1:first-of-type {
   align-items:center;
   justify-content: center;
   display:flex;
-  border-radius:25px;
+  border-radius:50px;
   background-color:#ffffff34;
 }
 #theme-switch img:last-child{
@@ -719,5 +719,11 @@ border: 2px solid #8fdcc2;
   .modal.show .modal-content {
     transform: translateY(0);
   }
+
+  .nav_toggle{
+    padding:5px;
+  }
+
+ 
 
 
