@@ -557,6 +557,22 @@ color:#4c6763;
 .lighttheme h5{
   color:#ede7de;
 }
+.darktheme h7{
+  color:#8fdcc2;
+}
+.lighttheme h7{
+  color:#025a4e;
+}
+
+h7{
+    position: relative;
+    text-align: center;
+    font-family : "Acorn";
+    font-size: 88px;
+    font-weight: bolder;
+    color: #025a4e;
+    letter-spacing: -3px; 
+}
 .blogtext{
   display:flex;
   flex-direction:column;
