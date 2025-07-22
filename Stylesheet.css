@@ -427,6 +427,12 @@ h5{
   background:  linear-gradient(135deg, #f3eee7 0%, #e3d9cc 100%);
 }
 
+.darktheme .scrollSection{
+  border-radius:20px;
+  border:solid 4px;
+  border-color: #8fdcc2;
+}
+
 .imagesScroll {
   display: flex;
   width: fit-content;
