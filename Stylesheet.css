@@ -269,7 +269,8 @@ nav button:hover{
 .clickable_images{
     display: flex;
     justify-content:space-between;
-    padding: 0 10vw;
+    padding: 2vh 10vw;
+    gap:2vw;
 }
 #IMAGE_ONE{
     width:52vw;
@@ -779,6 +780,25 @@ nav button{
   align-items: center;
 }
 
+h1{
+  margin-bottom:3vh;
+  padding-bottom:2vh;
+  padding-top:2vh;
+}
+
+#IMAGE_ONE{
+  border-radius:20px;
+}
+
+#IMAGE_TWO{
+  border-radius:20px;
+}
+#IMAGE_THREE{
+  border-radius:20px;
+} 
+#IMAGE_FOUR{
+  border-radius:20px;
+}
 }
 
 
