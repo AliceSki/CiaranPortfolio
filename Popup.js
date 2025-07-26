@@ -29,10 +29,16 @@ modal.addEventListener('click', e => {
 
  function showResult(choice) {
       const responseDiv = document.getElementById('response');
-      if (choice === 'yes') {
+      if (choice === 'Portfolio') {
         window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=ciaran@cdoherty.co.uk';
-      } else {
-        responseDiv.innerHTML = '<h2>Thanks for stopping by! I am currently unwilling to share my portfolio!</h2>';
+      } else if(choice=='Case') {
+         window.location.href = "https://blog.cdoherty.co.uk/";
+      }
+      else if(choice=='Hello!'){
+           responseDiv.innerHTML = '<h2>Hello!Have a great day!</h2>';
+      }
+      else if(choice=='Currentprojects'){
+        window.location.href = "https://blog.cdoherty.co.uk/";
       }
     }
 
