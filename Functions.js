@@ -39,24 +39,5 @@ window.addEventListener("scroll", () => {
 });
 
 
- document.addEventListener("DOMContentLoaded", () => {
-    const currentURL = window.location.href.toLowerCase();
-    const navButtons = document.querySelectorAll(".twonav nav button");
 
-    navButtons.forEach(button => {
-      const onClickAttr = button.getAttribute("onclick");
-      if (!onClickAttr) return;
-
-      // Grab the filename from the onclick
-      const match = onClickAttr.match(/'([^']+)'/);
-      if (!match) return;
-
-      const buttonPage = match[1].toLowerCase();
-
-      // Check if the current URL contains this button's page
-      if (currentURL.includes(buttonPage)) {
-        button.classList.add("active");
-      }
-    });
-  });
 
