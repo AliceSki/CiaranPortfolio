@@ -32,15 +32,24 @@ html, body{
 }
 
 :root{
-    --gradient1: linear-gradient(135deg,#c9dfce,#cde5bf,#d6ecb4,#e2ecbf,#e6eaba,#e8e8ca);
-    --gradient2: linear-gradient(135deg,#d7e0ce,#dee7b4,#e0e8b7,#e7edb7,#e1ebb7,#dae4c4);
-    --gradient3: linear-gradient(135deg, #e7dfbd,#e7e0d0,#e5dfb8,#cfddb1,#d5e0c5,#e3e2d2);
-    --gradient4: linear-gradient(135deg, #356a53, #326a38,#2c5e35,#607d32,#5a7348,#475c49);
-    --gradient5: linear-gradient(135deg,#546a42, #546951, #536755,#456b38,#33712f,#326a40,#2c5d42 );
-    --gradient6: linear-gradient(135deg, #616a3c,#5e6851,#586352,#536047,#48563c,#384c32,#4e6632,#40692d,#346c2e,#326736,#30583f);
-    --gradient7: linear-gradient(135deg, #5b6a36,#5a6945,#576753,#596555,#596147,#5d613a,#4d5c2d,#475f2e,#3e5534,#394a3c);
-    --gradient8: linear-gradient(135deg,#3c6a30,#3c6741,#3a6255,#395a53,#335344,#385135,#42552d,#3f5731,#425a31,#415933,#345338);
-    --gradient9: linear-gradient(135deg, #5b6a33,#5a644b,#565c53,#51564d,#49503e,#3b4f2f,#32592d,#325f2e,#306033,#2d5d35,#2d5837,#294f38);
+    --gradient1:linear-gradient(135deg,#d9dfbe,#e6e6cd,#d1ebc8,#d7ebd3,#cfebcc,#cfe7ca,#d7e2c5);
+    --gradient2:linear-gradient(135deg,#d1e0bc,#cee4b5,#cfe8c2,#cceac7,#dbe5ca,#e4e3d1);
+    --gradient3:linear-gradient(135deg,#c9dfc6,#cee4b5,#c9e6b4,#cae9bd,#ceebca,#d2ecd1,#e2edcd,#e3e6cd,#e3e5cc);
+    --gradient4:linear-gradient(135deg,#e5dfcd,#e3e3ca,#e5e1c2,#e6e1bd,#e7e1b9,#e8e4b4,#dee3af,#e5e7c1,#d5e5b2,#d9e9cc,#e2ead6);
+    --gradient5:linear-gradient(135deg,#e7e0cf,#e8e2ce,#e9e4c2,#e3dfc0,#e7e3bb,#dcdfb5,#d2dfb0,#d5e2bb,#c8dfb2,#cfe3c6,#d2e4cd,#e2e9d8);
+    --gradient6:linear-gradient(135deg,#d8e0c6,#dae0d0,#d6deca,#cfdcc2,#d8e0bb,#d3ddb7,#c7d7bb,#d1ddb8,#cad4b1,#d3d1b0,#d5d7c6);
+    --gradient7:linear-gradient(135deg,#cadfc2,#cce0ce,#d2e1d1,#ccdeca,#cadbc2,#cfd2b7,#d0d5b5,#d9cfb2,#e2d0b2,#e2d4c3,#e2dbd3);
+    --gradient8:linear-gradient(135deg,#c8dfbd,#c8e0c3,#c9dfcc,#ccdcce,#cdd9cf,#d0d8c5,#d2d5cb,#e0cfbe,#d9d1c4,#e8d4b1,#e9d7bd,#e9dbcc);
+    --gradient9:linear-gradient(135deg,#dbdfb6,#dadfba,#e1ddcd,#dcddce,#d3d8ce,#cfd4cf,#d8d9d0,#d8d6ca,#cad0ce,#c7cfc5,#d1d3bf,#cad3be,#d0deb4,#d3e1b9,#d9e6c9);
+    --gradient10:linear-gradient(135deg,#cedfb9,#cfdec3,#c9d9cb,#cdd8d0,#c7d5cf,#c8d1cd,#cad2c2,#cdcfc5,#ddd5b9,#ded9b3);
+    --gradient11:linear-gradient(135deg,#cbdfb7,#ccdec8,#d0ddd0,#ceddcc,#d2dbcf,#d0dcd0,#d6d8c9,#dcd6be,#e5d1bf,#e0d4ba,#e7d2b8,#e6cfb9,#e7d1b3,#e9d9c7);
+    --gradient12:linear-gradient(135deg,#d9e0bc,#d9decb,#d8ded2,#dbded0,#e0dccf,#e3dbcf,#e6d9cb,#e3dac7,#e7d5c1,#e5d5b9,#e6dbbf,#e6d5b5,#e5d8c6);
+    --gradient13:linear-gradient(135deg, #356a53, #326a38,#2c5e35,#607d32,#5a7348,#475c49);
+    --gradient14:linear-gradient(135deg,#546a42, #546951, #536755,#456b38,#33712f,#326a40,#2c5d42 );
+    --gradient15:linear-gradient(135deg, #616a3c,#5e6851,#586352,#536047,#48563c,#384c32,#4e6632,#40692d,#346c2e,#326736,#30583f);
+    --gradient16:linear-gradient(135deg, #5b6a36,#5a6945,#576753,#596555,#596147,#5d613a,#4d5c2d,#475f2e,#3e5534,#394a3c);
+    --gradient17:linear-gradient(135deg,#3c6a30,#3c6741,#3a6255,#395a53,#335344,#385135,#42552d,#3f5731,#425a31,#415933,#345338);
+    --gradient18:linear-gradient(135deg, #5b6a33,#5a644b,#565c53,#51564d,#49503e,#3b4f2f,#32592d,#325f2e,#306033,#2d5d35,#2d5837,#294f38);
 }
 
 body{
@@ -85,11 +94,55 @@ body{
 }
 .animated-gradient .layer:nth-child(2) {
   background: var(--gradient2);
-  animation-delay: 15s;
+  animation-delay: 5s;
 }
 .animated-gradient .layer:nth-child(3) {
   background: var(--gradient3);
-  animation-delay: 30s;
+  animation-delay: 10s;
+}
+.animated-gradient .layer:nth-child(4){
+  background: var(--gradient4);
+  animation-delay:15s;
+}
+
+.animated-gradient .layer:nth-child(5){
+  background: var(--gradient5);
+  animation-delay:20s;
+}
+
+.animated-gradient .layer:nth-child(6){
+  background: var(--gradient6);
+  animation-delay:25s;
+}
+
+.animated-gradient .layer:nth-child(7){
+  background: var(--gradient7);
+  animation-delay:30s;
+}
+
+.animated-gradient .layer:nth-child(8){
+  background: var(--gradient8);
+  animation-delay:35s;
+} 
+
+.animated-gradient .layer:nth-child(9){
+  background: var(--gradient9);
+  animation-delay:40s;
+}
+
+.animated-gradient .layer:nth-child(10){
+  background: var(--gradient10);
+  animation-delay:45s;
+}
+
+.animated-gradient .layer:nth-child(11){
+  background: var(--gradient11);
+  animation-delay:50s;
+}
+
+.animated-gradient .layer:nth-child(12){ 
+  background: var(--gradient12);
+  animation-delay:55s;
 }
 
 @keyframes fadeGradient {
@@ -154,27 +207,27 @@ body.darktheme .animated-gradient .layer {
 }
 
 body.darktheme .animated-gradient .layer:nth-child(1) {
-  background: var(--gradient4);
+  background: var(--gradient13);
   animation-delay: 0s;
 }
 body.darktheme .animated-gradient .layer:nth-child(2) {
-  background: var(--gradient5);
+  background: var(--gradient14);
   animation-delay: 10s;
 }
 body.darktheme .animated-gradient .layer:nth-child(3) {
-  background: var(--gradient6);
+  background: var(--gradient15);
   animation-delay: 20s;
 }
 body.darktheme .animated-gradient .layer:nth-child(4) {
-  background: var(--gradient7);
+  background: var(--gradient16);
   animation-delay: 30s;
 }
 body.darktheme .animated-gradient .layer:nth-child(5) {
-  background: var(--gradient8);
+  background: var(--gradient17);
   animation-delay: 40s;  
 }
 body.darktheme .animated-gradient .layer:nth-child(6) {
-  background: var(--gradient9);
+  background: var(--gradient18);
   animation-delay: 50s;  
 }
 
