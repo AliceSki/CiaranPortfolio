@@ -418,7 +418,7 @@ body {
 
 .AboutMeSection{
     display: flex;
-    padding: 0 20vh;
+    padding: 0 5vw;
     justify-content: space-between;
 }
 
@@ -427,17 +427,20 @@ body {
     border-radius:50% 50% 0% 0%;
 }
 
+
 h3{
     position: relative;
     text-align: center;
     font-family : "Acorn";
-    font-size: 50px;
+    font-size: 2.6vw;
     font-weight: bold;
     color: #025a4e;
 }
 .AboutMeText{
     display:flex;
     flex-direction: column;
+    width:40vw;
+    align-self:center;
 }
 h4{
     font-family: "GT-Planar";
@@ -844,7 +847,81 @@ border: 2px solid #8fdcc2;
     transform: translateY(0);
   }
 
+.Playboxes{
+  display:flex;
+  justify-content: space-between;
+  padding:5vh 5vw;
+}
 
+.Playboxes1{
+  display:flex;
+  justify-content: space-between;
+  padding:5vh 5vw;
+   align-items:center;
+}
+
+.Box3{
+  display:flex;
+ border-radius:10px;
+ padding:1.5vw;
+}
+
+.Box4{
+  display:flex;
+ border-radius:10px;
+ padding:1.5vw;
+ width:fit-content;
+ height:fit-content;
+ align-items:center;
+}
+
+.BoxOne{
+  display:flex;
+ border-radius:10px;
+ padding:1.5vw;
+}
+
+.lighttheme .BoxOne{
+  background-color:#f4eee5;
+}
+
+.darktheme .BoxOne{
+  background-color:#234138;
+}
+
+.lighttheme .Box3{
+  background-color:#f4eee5;
+}
+
+.darktheme .Box3{
+  background-color:#234138;
+}
+
+.lighttheme .Box4{
+  background-color:#f4eee5;
+}
+
+.darktheme .Box4{
+  background-color:#234138;
+}
+
+.BoxOneText{
+  display:flex;
+  flex-direction:column;
+}
+
+.BigBoxImage{
+  display:flex;
+  width:100%;
+  min-height:30vh;
+  justify-content:center;
+ border-radius:10px;
+}
+.BigBoxImage img {
+  max-width: 100%;            
+  height: auto;             
+  display: block;           
+}
 
 @media (max-width:500px){
 
@@ -893,6 +970,7 @@ h1{
 
 h8{
   font-size:12px;
+  text-align: left;
 }
 
 #IMAGE_ONE{
