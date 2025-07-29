@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciaran.Portfolio/about</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <div class="animated-gradient">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+</div>
+
+<div class="twonav">
+ <nav><button onclick="window.location.href='index.html'"><h2>Work</h2></button>
+<button onclick="window.location.href='About.html'"><h2>About</h2></button>
+<button onclick="window.location.href='Awards.html'"><h2>Awards</h2></button>
+<button onclick="window.location.href='Notes.html'"><h2>Blog</h2></button>
+<button id="ContactBtn"><h2>Contact</h2></button></nav>
+<nav><div class="nav_toggle" id="theme"></div></nav>
+</div>
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <div id="contactContent"></div>
+  </div>
+</div>
+<script>
+    fetch('themebutton.html')
+    .then(res => res.text())
+    .then(html => {
+        document.getElementById('theme').innerHTML = html;
+
+        // Now that the button exists, run the Functions.js code
+        const script = document.createElement('script');
+        script.src = 'Functions.js';
+        document.body.appendChild(script);
+    });
+</script>
+
+<h1>I'm Ciaran.</h1>
+<div class="AboutMeSection">
+    <div class="arc-frame"></div>
+    <img class="Ciaran" src="imageplaceholder.jpg">
+    </div>
+    <div class="AboutMeText" style="text-align:center; margin-top:0;">
+    <h3 style="text-align: left; line-height: 1.2; margin-left: 25vh; margin-top:0;">
+        <span style="display: block; margin: 0;">I'm an accomplished and driven</span>
+        <span style="display: block; margin: 0;">Cyber Security Professional</span>
+    </h3>
+</div>
+</div>
+
+    
+
+<br>
+<br>
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+<br>
+<br>
+ <script src="popup.js"></script>
+</body>
+</html>
