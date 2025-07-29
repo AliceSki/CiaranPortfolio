@@ -424,7 +424,9 @@ body {
 
 .Ciaran {
     width:35vw;
+    border-radius:50% 50% 0% 0%;
 }
+
 h3{
     position: relative;
     text-align: center;
@@ -638,6 +640,17 @@ color: #8fdcc2;
   background-color: #234138;
 }
 .darktheme h3{
+  color:#8fdcc2;
+}
+h8{
+    position: relative;
+    text-align: center;
+    font-family : "Acorn";
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #025a4e;
+}
+.darktheme h8{
   color:#8fdcc2;
 }
 .darktheme h4{
@@ -876,6 +889,10 @@ h1{
   margin-bottom:3vh;
   padding-bottom:2vh;
   padding-top:2vh;
+}
+
+h8{
+  font-size:12px;
 }
 
 #IMAGE_ONE{
