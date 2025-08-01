@@ -1,27 +1,38 @@
-<br>
+<div id="WelcomeMessages">
     <div class="messagebox" style="border-radius:30px; padding:.75em 1.4em .75em 1.4em; width:fit-content; margin:20px auto 0 auto;">
-    <h2>Hi</h2>
+    <h2 style="font-size:20px">Hi</h2>
     </div>
      <div class="messagebox" style="border-radius:30px;  padding:.75em 1.4em .75em 1.4em; width:fit-content; margin:10px auto 0 auto;">
-    <h2>I'm Ciaran Bot. I'm here to help you with any questions you might have about Seáns work.</h2>
+    <h2 style="font-size:20px">I'm Ciaran Bot. I'm here to help you with any questions you might have about Seáns work.</h2>
     </div>
     <div class="messagebox" style="border-radius:30px;  padding:.75em 1.4em .75em 1.4em; width:fit-content; margin:10px auto 0 auto;">
-    <h2>What brings you here today?</h2>
+    <h2 style="font-size:20px">What brings you here today?</h2>
     </div>
 </div>
+<div id="MenuBox1">
+<div id="UserMessage">
 
+</div>
+<div id ="BotMessage">
+
+</div>
+</div>
+<br>
+
+<div class="responsemenu" id="Menu">
 <div class="Responsebox" style="border-radius:30px; padding:.75em 1.4em; width:fit-content; margin:10px auto; text-align:center;">
-    <button style="background-color:transparent; border:none;" onclick="showResult('Hello!')"><h3 style="display:inline; font-size:20px; margin-bottom:0px;">Just saying hello!</h3></button>
+    <button style="background-color:transparent; border:none;" onclick="handleclick1()"><h3 style="display:inline; font-size:20px; margin-bottom:0px; font-family:GT-Planar;">Just saying hello!</h3></button>
   </div>
 <div class="Responsebox" style="border-radius:30px; padding:.75em 1.4em; width:fit-content; margin:10px auto; text-align:center;">
-    <button style="background-color:transparent; border:none;" onclick="showResult('Portfolio')"><h3 style="display:inline; font-size:20px; margin-bottom:0px;">We'd like to hire you</h3></button>
+    <button style="background-color:transparent; border:none;" onclick="handleclick2('Portfolio')"><h3 style="display:inline; font-size:20px; margin-bottom:0px; font-family:GT-Planar;">We'd like to hire you</h3></button>
   </div>
 <div class="Responsebox" style="border-radius:30px; padding:.75em 1.4em; width:fit-content; margin:10px auto; text-align:center;">
-    <button style="background-color:transparent; border:none;" onclick="showResult('Currentprojects')"><h3 style="display:inline; font-size:20px; margin-bottom:0px;">What are you currently working on?</h3></button>
+    <button style="background-color:transparent; border:none;" onclick="handleclick3('Currentprojects')"><h3 style="display:inline; font-size:20px; margin-bottom:0px; font-family:GT-Planar;">What are you currently working on?</h3></button>
   </div>
 
   <div class="Responsebox" style="border-radius:30px; padding:.75em 1.4em; width:fit-content; margin:10px auto; text-align:center;">
-    <button style="background-color:transparent; border:none;" onclick="showResult('Case')"><h3 style="display:inline; font-size:20px; margin-bottom:0px;">Do you have any real world case studies?</h3></button>
+    <button style="background-color:transparent; border:none;" onclick="handleclick4('Case')"><h3 style="display:inline; font-size:20px; margin-bottom:0px; font-family:GT-Planar;">Do you have any real world case studies?</h3></button>
+  </div>
   </div>
 
  <div id="response" style="text-align:center; margin-top:15px; font-size:20px; color:white;"></div>

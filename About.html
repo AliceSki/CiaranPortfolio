@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciaran.Portfolio</title>
+       <script>
+  if (localStorage.getItem('darktheme') === 'active') {
+    document.documentElement.classList.add('dark');
+  }
+</script>
     <link rel="stylesheet" href="Stylesheet.css">
+ 
 </head>
 <body>
     <div class="animated-gradient">
@@ -48,7 +54,14 @@
     });
 </script>
 
-<h1>I'm Ciaran.</h1>
+<div class="HeadingContainer" style="margin-top:20px;">
+  <img class="topIcon" src="white star icon.png" style="margin:0px;padding:0px;">
+<h1 class="heading" style="margin:0px;padding:0px;display:block;">I'm Ciaran.</h1>
+<img class="bottomIcon" src="white star icon.png" style="margin:0px;padding:0px;">
+</div>
+
+
+
 <div class="AboutMeSection">
     <img class="Ciaran" src="imageplaceholder.jpg">
     <div class="AboutMeText" style="text-align:center; margin-top:0;">

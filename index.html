@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+             <script>
+  if (localStorage.getItem('darktheme') === 'active') {
+    document.documentElement.classList.add('dark');
+  }
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciaran.Portfolio/index</title>
+    <title>Ciaran.Portfolio</title>
 <link rel="stylesheet" href="Stylesheet.css">
 </head>
 <body>
@@ -51,8 +56,13 @@
     });
 </script>
 
+<div class="HeadingContainer" style="margin-top:20px;">
+  <img class="topIcon" src="white star icon.png" style="margin:0px;padding:0px;">
+<h1 class="heading" style="margin:0px;padding:0px;display:block;">Hi.I'm a Cyber Security Analyst.</h1>
+<img class="bottomIcon" src="white star icon.png" style="margin:0px;padding:0px;">
+</div>
 
-<h1 style="margin-bottom:0px;">Hi. I'm Ciaran.<br>A Cyber Security Analyst.</h1>
+
 <h2>I'm passionate about crafting experiences that are engaging, accessible, <br>and user-centric.</h2>
 <div class="clickable_images">
    <a href="https://blog.cdoherty.co.uk/using-abuseipdb-in-microsoft-sentinel-for-ip-reputation-and-threat-enrichment" >
