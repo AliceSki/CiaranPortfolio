@@ -958,26 +958,29 @@ border: 2px solid #8fdcc2;
   display:flex;
   justify-content: space-between;
   padding:5vh 5vw;
+  align-items: center;
 }
 
 .Playboxes1{
   display:flex;
   justify-content: space-between;
-  padding:5vh 5vw;
-   align-items:center;
+  padding:5vh 5vw;  
+  align-items: center;
 }
 
 .Box3{
   display:flex;
  border-radius:10px;
  padding:1.5vw;
+ width:40vw;
+   align-items: center;
 }
 
 .Box4{
   display:flex;
  border-radius:10px;
  padding:1.5vw;
- width:fit-content;
+ width:40vw;
  height:fit-content;
  align-items:center;
 }
@@ -986,7 +989,10 @@ border: 2px solid #8fdcc2;
   display:flex;
  border-radius:10px;
  padding:1.5vw;
+ width:40vw;
+   align-items: center;
 }
+
 
 .lighttheme .BoxOne{
   background-color:#f4eee5;
@@ -1015,6 +1021,7 @@ border: 2px solid #8fdcc2;
 .BoxOneText{
   display:flex;
   flex-direction:column;
+    align-items: center;
 }
 
 .BigBoxImage{
@@ -1023,11 +1030,13 @@ border: 2px solid #8fdcc2;
   min-height:30vh;
   justify-content:center;
  border-radius:10px;
+   align-items: center;
 }
 .BigBoxImage img {
   max-width: 100%;            
   height: auto;             
-  display: block;           
+  display: block;
+  align-items: center;           
 }
 
 @media (max-width:500px){
