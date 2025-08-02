@@ -31,6 +31,37 @@ html, body{
 
 }
 
+body.lighttheme {
+  --fallback-bg: #ede7dd;
+}
+
+body.darktheme {
+  --fallback-bg: #233831;
+}
+
+.animated-gradient::before {
+  content: "";
+  position: relative;
+  inset: 0;
+  z-index: 2; /* above gradient layers */
+  background-color: var(--fallback-bg);
+  opacity: 1;
+  animation: fadeOutSolid 0.4s ease forwards;
+  animation-delay: 0.01s;
+  pointer-events: none;
+}
+
+
+@keyframes fadeOutSolid {
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+
+
 .heading{
   width:fit-content;
   align-self:center;
@@ -127,11 +158,12 @@ body{
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(237, 231, 221, 1) 100%);
   background-repeat: no-repeat;
-  background-size: 100% 30vh;
+  background-size: 100% 100vh;
   background-position: top;
   background-color: #ede7dd;
 * position: relative; 
   overflow-x: hidden;
+    z-index: -2;
 }
 
 .animated-gradient {
@@ -239,11 +271,12 @@ body.darktheme {
   background:
   linear-gradient(to bottom,rgba(0, 0, 0, 0) 0%,rgba(35, 56, 49, 1) 100%);
   background-repeat: no-repeat;
-  background-size: 100% 25vh;
+  background-size: 100% 100vh;
   background-position: top;
   background-color: #233831;
   position: relative; /* Needed for the overlay child */
   overflow-x: hidden;
+  z-index:-2;
 }
 
   body.darktheme .animated-gradient {
@@ -302,26 +335,26 @@ body.darktheme .animated-gradient .layer:nth-child(7){
   background: var(--gradient19);
   animation-delay: 30s;
 }
-body.darktheme .animated-gradient .layer:nth-child(7){
+body.darktheme .animated-gradient .layer:nth-child(8){
   background: var(--gradient20);
   animation-delay: 35s;
 }
 
-body.darktheme .animated-gradient .layer:nth-child(7){
+body.darktheme .animated-gradient .layer:nth-child(9){
   background: var(--gradient21);
   animation-delay: 40s;
 }
 
-body.darktheme .animated-gradient .layer:nth-child(7){
+body.darktheme .animated-gradient .layer:nth-child(10){
   background: var(--gradient22);
   animation-delay: 45s;
 }
-body.darktheme .animated-gradient .layer:nth-child(7){
+body.darktheme .animated-gradient .layer:nth-child(11){
   background: var(--gradient23);
   animation-delay: 50s;
 }
 
-body.darktheme .animated-gradient .layer:nth-child(7){
+body.darktheme .animated-gradient .layer:nth-child(12){
   background: var(--gradient24);
   animation-delay: 55s;
 }
@@ -395,6 +428,9 @@ body.lighttheme .animated-gradient::after {
   background: linear-gradient(to bottom, transparent, #ede7dd);
   pointer-events: none;
 }
+
+
+
 
 
 
@@ -970,6 +1006,7 @@ border: 2px solid #8fdcc2;
 
 .Box3{
   display:flex;
+  flex-direction:column;
  border-radius:10px;
  padding:1.5vw;
  width:40vw;
@@ -985,6 +1022,7 @@ border: 2px solid #8fdcc2;
  align-items:center;
 }
 
+
 .BoxOne{
   display:flex;
  border-radius:10px;
@@ -997,6 +1035,8 @@ border: 2px solid #8fdcc2;
 .lighttheme .BoxOne{
   background-color:#f4eee5;
 }
+
+
 
 .darktheme .BoxOne{
   background-color:#234138;
@@ -1018,10 +1058,40 @@ border: 2px solid #8fdcc2;
   background-color:#234138;
 }
 
-.BoxOneText{
+.Box4:hover{
+  transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.BoxOne:hover{
+  transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.Box3:hover{
+  transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+
+
+.BoxOneTextText  {
   display:flex;
   flex-direction:column;
     align-items: center;
+    justify-self:center;
+}
+
+.BoxOneText{
+  display:flex;
+  gap:1vw;
+  align-items:center;
+}
+
+.circular_image img{
+ border-radius: 50%;
+ width:10vw;
+  align-items: center;
 }
 
 .BigBoxImage{
@@ -1046,6 +1116,25 @@ border: 2px solid #8fdcc2;
   width:100%;
   max-width:100%;
     overflow-x: hidden;
+}
+
+.clickable_images{
+  display:flex;
+  flex-direction:column;
+    align-items: center;
+}
+
+.AboutMeSection{
+  flex-direction:column;
+  align-items: center;
+}
+
+.AboutMeText{
+  width:80vw;
+  padding:15px 5px;
+}
+.Ciaran{
+  height:30vh;
 }
 
 .twonav{
@@ -1084,22 +1173,33 @@ h1{
   padding-top:2vh;
 }
 
+h2{
+  font-size:15px;
+}
+
+h3{
+  font-size:20px;
+}
 h8{
   font-size:12px;
   text-align: left;
 }
 
 #IMAGE_ONE{
+       width:52vw;
   border-radius:20px;
 }
 
 #IMAGE_TWO{
+     width:52vw;
   border-radius:20px;
 }
 #IMAGE_THREE{
+     width:52vw;
   border-radius:20px;
 } 
 #IMAGE_FOUR{
+     width:52vw;
   border-radius:20px;
 }
 }
