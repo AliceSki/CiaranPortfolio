@@ -27,6 +27,14 @@ modal.addEventListener('click', e => {
   }
 });
 
+
+function closeModal() {
+  const modal = document.getElementById('contactModal');
+  modal.classList.remove('show');
+  setTimeout(() => modal.style.display = 'none', 300);
+}
+
+
  function showResult(choice) {
       const responseDiv = document.getElementById('response');
       if (choice === 'Portfolio') {
