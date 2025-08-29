@@ -1099,7 +1099,13 @@ border: 2px solid #8fdcc2;
   display:flex;
   justify-content: space-between;
   padding:5vh 5vw;  
-  align-items: center;
+  align-items: flex-start;
+}
+
+.Playboxes,
+.Playboxes1 {
+  margin-bottom: 0;     /* reset default spacing */
+  padding-bottom: 0;
 }
 
 .Box3{
@@ -1108,7 +1114,19 @@ border: 2px solid #8fdcc2;
  border-radius:10px;
  padding:1.5vw;
  width:40vw;
-   align-items: center;
+   align-items: flex-start;
+}
+
+.FourandThree{
+  display:flex;
+  flex-direction: column;
+  row-gap:5vh;
+}
+
+.boxes{
+  display:flex;
+  flex-direction:column;
+    row-gap:5vh;
 }
 
 .Box4{
@@ -1126,7 +1144,8 @@ border: 2px solid #8fdcc2;
  border-radius:10px;
  padding:1.5vw;
  width:40vw;
-   align-items: center;
+   align-items: flex-start;
+   margin-top:0px;
 }
 
 
@@ -1285,6 +1304,14 @@ h3{
 h8{
   font-size:12px;
   text-align: left;
+}
+
+.BoxOne{
+   width:30vw;
+}
+
+.Box3{
+  width:30vw;
 }
 
 #IMAGE_ONE{
