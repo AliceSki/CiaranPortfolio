@@ -437,12 +437,13 @@ body.lighttheme .animated-gradient::after {
 nav button {
     all:unset;
     color:#025a4e;
-    padding: .2vh .5vw .2vh .5vw;
+    padding: .3vh .5vw .3vh .5vw;
+    height:7vh;
+     display: inline-flex;
+    justify-content: center;
+    align-items: center;    
 }
-nav button:active{
-    border: 1px solid black;
 
-}
 nav button:hover{
       border: transparent;
       background-color: rgba(255, 255, 255, 0.5);
@@ -857,7 +858,7 @@ margin-right:auto;
 }
 
 .VerifiedIcon:hover{
-  transform: translateX(-10%);
+  transform: translateX(10%);
   transition: transform 0.3s ease;
 }
 
@@ -970,6 +971,7 @@ nav{
 
 .messagebox{
   border:transparent;
+  margin: 5px auto 5px 5px;
 }
 
 .lighttheme .Responsebox{
@@ -1249,6 +1251,11 @@ border: 2px solid #8fdcc2;
   display:flex;
   flex-direction:column;
     align-items: center;
+}
+
+.VerifiedIcon{
+  width:10px;
+  height:auto;
 }
 
 .AboutMeSection{
