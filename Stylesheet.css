@@ -25,6 +25,22 @@ h2{
     font-weight: 200;
 }
 
+.hoverText{
+   font-family: "GT-Planar";
+    font-size: 1.5vw;
+    color: #4c6763;
+    text-align: center;
+    font-weight: 200;
+}
+
+.hoverText1{
+  font-family: "GT-Planar";
+    font-size: 1.5vw;
+    color: #4c6763;
+    text-align: center;
+    font-weight: 200;
+}
+
 html, body{
   width:100%;
   max-width:100%;
@@ -437,7 +453,7 @@ body.lighttheme .animated-gradient::after {
 nav button {
     all:unset;
     color:#025a4e;
-    padding: .3vh .5vw .3vh .5vw;
+    padding: .3vh 1.3vw .3vh 1.3vw;
     height:7vh;
      display: inline-flex;
     justify-content: center;
@@ -828,8 +844,19 @@ h1:first-of-type {
   background-color:white;
   overflow:hidden;
 }
-.AwardImage{
-  width:80%;
+
+
+.AwardImages .AwardImage{
+width:100%;
+height:auto;
+ object-fit: contain;
+ background-color:white;
+border-radius: 20px;
+overflow:hidden;
+}
+
+.ToolPage{
+    width:80%;
   height:80%;
  object-fit: contain;
  background-color:white;
@@ -837,24 +864,65 @@ h1:first-of-type {
   overflow:hidden;
 }
 
+.ToolPage:hover{
+  transform: translateY(-10%);
+  transition: transform 0.3s ease;
+
+  
+}
+
 .AwardImage:hover{
   transform: translateY(-10%);
   transition: transform 0.3s ease;
 }
 
+.hoverText {
+    opacity: 0;
+    pointer-events: cursor;
+}
+.hoverText1 {
+    opacity: 0;
+    pointer-events: cursor;
+}
+
+
+.AwardImages:hover .hoverText {
+    opacity: 1; 
+    transform: translateX(50%) 
+      transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.verifiedtext{
+  display:flex;
+}
+.VerifiedIcon:hover .hoverText1 {
+    opacity: 1; 
+    transform: translateX(50%) 
+      transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
 .Verification{
    width:19vw;
-   height:15%;
+   height:10px;
    border-radius:20px;
    overflow:hidden;
      align-items:center;
   justify-content: center;
+  margin-top: auto;
   border:solid;
   border-width:6px;
+  border-color:#025a4e;
   } 
 
 .VerifiedIcon{
 margin-right:auto;
+width:30px;
+height:auto;
+padding-top:10px;
+padding-left:10px;
+padding-bottom: 0px;
+margin:0px;
 }
 
 .VerifiedIcon:hover{
@@ -871,11 +939,14 @@ margin-right:auto;
    }
 
 .ProgressBar{
+  margin:0px;
+  padding:0px;
   width:100%;
-  height:100%;
-  border-radius:10px;
+  height:15px;
+  border-radius: 0px 10px 10px 0px;
   display: inline-block;
   text-align: left;
+  
 }
 
 .lighttheme .ProgressBar{
@@ -1105,9 +1176,11 @@ border: 2px solid #8fdcc2;
   justify-content: space-between;
   padding:5vh 5vw;
   align-items: center;
+  overflow:hidden;
 }
 
 .Playboxes1{
+  overflow:hidden;
   display:flex;
   justify-content: space-between;
   padding:5vh 5vw;  
@@ -1253,11 +1326,6 @@ border: 2px solid #8fdcc2;
     align-items: center;
 }
 
-.VerifiedIcon{
-  width:10px;
-  height:auto;
-}
-
 .AboutMeSection{
   flex-direction:column;
   align-items: center;
@@ -1294,6 +1362,11 @@ body{overflow:visible;}
 nav button{
   flex-shrink:1;
 }
+
+.ProgressBar{
+  height:10px;
+}
+
 
 .twonav button{
   flex-shrink:1;
@@ -1348,7 +1421,37 @@ h8{
      width:52vw;
   border-radius:20px;
 }
+
+.Playboxes1{
+    justify-content: center;
+    gap:2vw;
 }
 
+.Playboxes{
+  justify-content: center;
+  gap:2vw;
+}
 
+}
+
+@media (max-width:900px){
+  .VerifiedIcon{
+    display:none;
+  }
+
+  .Verification{
+    display:none;
+  }
+
+  .ProgressBar{
+    display:none;
+  }
+
+  .hoverText{
+    display:none;}
+  
+    .hoverText1{
+      display:none;
+    }
+}
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+             <script>
+  if (localStorage.getItem('darktheme') === 'active') {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciaran D.Portfolio</title>
+    <link rel="icon" type="image/png" href="sparkle.png">
+<link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <div class="animated-gradient">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+</div>
+
+<div class="twonav">
+ <nav><button onclick="window.location.href='index.html'"><h2>Work</h2></button>
+<button onclick="window.location.href='About.html'"><h2>About</h2></button>
+<button onclick="window.location.href='Awards.html'"><h2>Awards</h2></button>
+<button onclick="window.location.href='Notes.html'"><h2>Blog</h2></button>
+<button id="ContactBtn"><h2>Contact</h2></button></nav>
+
+
+
+<nav><button class="nav_toggle" id="theme"></button></nav>
+</div>
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <div id="contactContent"></div>
+    <button class="close-btn" onclick="closeModal()">✕</button>
+  </div>
+</div>
+<script>
+    fetch('themebutton.html')
+    .then(res => res.text())
+    .then(html => {
+        document.getElementById('theme').innerHTML = html;
+
+        // Now that the button exists, run the Functions.js code
+        const script = document.createElement('script');
+        script.src = 'Functions.js';
+        document.body.appendChild(script);
+    });
+</script>
+<h1>HEADING</h1>
+<h2>Some description regarding the award</h2>
+<br>
+<br>
+<div id="footer"></div>
+
+<script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+  <br>
+  <br>
+ <script src="popup.js"></script>
+</body>
+</html>
