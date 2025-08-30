@@ -836,6 +836,10 @@ h1:first-of-type {
   overflow:hidden;
 }
 
+.AwardImage:hover{
+  transform: translateY(-10%);
+  transition: transform 0.3s ease;
+}
 
 .Verification{
    width:19vw;
@@ -851,6 +855,12 @@ h1:first-of-type {
 .VerifiedIcon{
 margin-right:auto;
 }
+
+.VerifiedIcon:hover{
+  transform: translateX(-10%);
+  transition: transform 0.3s ease;
+}
+
 
 .lighttheme .Verification{ 
   border-color:#2a443a;
