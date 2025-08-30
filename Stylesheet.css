@@ -468,6 +468,12 @@ nav button:hover{
       
 }
 
+nav button.active{
+      border: transparent;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50px 50px 50px 50px;
+}
+
 
 
 .clickable_images{
@@ -1231,6 +1237,7 @@ border: 2px solid #8fdcc2;
  width:40vw;
    align-items: flex-start;
    margin-top:0px;
+   flex-wrap:wrap;
 }
 
 

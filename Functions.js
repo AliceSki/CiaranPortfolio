@@ -38,6 +38,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const currentPath = window.location.pathname.split("/").pop();
+const navButtons = document.querySelectorAll("nav button");
+
+navButtons.forEach(btn => {
+  const target = btn.getAttribute("onclick"); 
+  // extract page name from onclick string
+  if (target && target.includes(currentPath)) {
+    btn.classList.add("active");
+  }
+});
+
+
+
 
 
 
