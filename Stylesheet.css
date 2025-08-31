@@ -853,8 +853,11 @@ h1:first-of-type {
 
 
 .AwardImages .AwardImage{
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-top:0px;
 width:100%;
-height:auto;
+height:90%;
  object-fit: contain;
  background-color:white;
 border-radius: 20px;
@@ -922,13 +925,11 @@ overflow:hidden;
   } 
 
 .VerifiedIcon{
-margin-right:auto;
+justify-content:center;
+align-items:flex-start;
 width:30px;
 height:auto;
-padding-top:10px;
-padding-left:10px;
-padding-bottom: 0px;
-margin:0px;
+padding-top:2px;
 }
 
 .VerifiedIcon:hover{
@@ -1017,7 +1018,7 @@ nav{
       position:sticky;
       align-items:center;
       top:15px;
- width: fit-content; /* Or a fixed width like 800px */
+ width: fit-content;
  height:8vh;
   margin: 0 auto;
   display:flex;
@@ -1234,6 +1235,7 @@ border: 2px solid #8fdcc2;
   display:flex;
  border-radius:10px;
  padding:1.5vw;
+ height:20vh;
  width:40vw;
    align-items: flex-start;
    margin-top:0px;
@@ -1289,6 +1291,7 @@ border: 2px solid #8fdcc2;
   flex-direction:column;
     align-items: center;
     justify-self:center;
+    width:30vw;
 }
 
 .BoxOneText{
@@ -1301,6 +1304,7 @@ border: 2px solid #8fdcc2;
  border-radius: 50%;
  width:10vw;
   align-items: center;
+  
 }
 
 .BigBoxImage{
@@ -1364,6 +1368,7 @@ body{overflow:visible;}
     font-size: 2vw;
     top:20px;
     width:100%;
+    width:95vw;
    
 }
 nav button{
@@ -1405,6 +1410,24 @@ h8{
 
 .BoxOne{
    width:30vw;
+   height:30vh;
+   flex-direction:column;
+}
+
+.BoxOneText{
+  flex-direction:column;
+  height:100%;
+
+}
+
+.BoxOneTextText{
+  flex-direction:column;
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.circular_image{
+  margin-top:auto;
 }
 
 .Box3{
