@@ -1381,7 +1381,7 @@ body{overflow:visible;}
     align-items: center;
     font-size: 2vw;
     top:20px;
-    width:95vw;
+    width:fit-content;
    
 }
 nav button{
@@ -1470,8 +1470,7 @@ h8{
 }
 
 .Playboxes1{
-  
-    justify-content: center;
+  justify-content: center;
     gap:2vw;
 }
 

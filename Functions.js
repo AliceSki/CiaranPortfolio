@@ -38,7 +38,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const currentPath = window.location.pathname.split("/").pop()|| "index.html";
+const currentPath = window.location.pathname.split("/").pop();
+if (!currentPath) currentPath = "index.html";  
 const navButtons = document.querySelectorAll("nav button");
 
 navButtons.forEach(btn => {
