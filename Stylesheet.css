@@ -925,7 +925,7 @@ overflow:hidden;
   } 
 
 .VerifiedIcon{
-justify-content:center;
+justify-content:flex-start;
 align-items:flex-start;
 width:30px;
 height:auto;
@@ -1331,6 +1331,20 @@ border: 2px solid #8fdcc2;
     overflow-x: hidden;
 }
 
+.Playboxes{
+  justify-content:center;
+  flex-direction:column;
+}
+.Playboxes1{
+   justify-content:center;
+  flex-direction:column;
+}
+
+Playboxes3{
+   justify-content:center;
+  flex-direction:column;
+}
+
 .clickable_images{
   display:flex;
   flex-direction:column;
@@ -1367,7 +1381,6 @@ body{overflow:visible;}
     align-items: center;
     font-size: 2vw;
     top:20px;
-    width:100%;
     width:95vw;
    
 }
@@ -1409,14 +1422,16 @@ h8{
 }
 
 .BoxOne{
-   width:30vw;
+   width:80vw;
    height:30vh;
    flex-direction:column;
+   align-items:center;
 }
 
 .BoxOneText{
   flex-direction:column;
   height:100%;
+  align-items:center;
 
 }
 
@@ -1424,6 +1439,8 @@ h8{
   flex-direction:column;
   padding-bottom:0px;
   margin-bottom:0px;
+  width:70vw;
+  justify-content:center;
 }
 
 .circular_image{
@@ -1453,6 +1470,7 @@ h8{
 }
 
 .Playboxes1{
+  
     justify-content: center;
     gap:2vw;
 }
