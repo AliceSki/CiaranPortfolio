@@ -928,7 +928,7 @@ overflow:hidden;
 justify-content:flex-start;
 align-items:flex-start;
 width:30px;
-height:auto;
+height:30px;
 padding-top:2px;
 padding-bottom:0px;
 margin-bottom:0px;
@@ -1344,7 +1344,7 @@ border: 2px solid #8fdcc2;
 }
 
 @media (max-width:500px){
-
+#theme-switch{width:30px;}
 
   html, body{
   width:100%;
