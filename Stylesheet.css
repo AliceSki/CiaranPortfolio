@@ -538,13 +538,25 @@ body {
 
 .AboutMeSection{
     display: flex;
-    padding: 0 5vw;
+    padding: 0 0 0 5vw;
     justify-content: space-between;
 }
 
+.AboutMeDescription{
+   padding:0;
+   margin-top:0; 
+   width:30vw;
+   text-align: left; 
+}
+
+.AboutMeHeader{
+  width:30vw;
+}
 .Ciaran {
     width:35vw;
     border-radius:50% 50% 0% 0%;
+    margin:0;
+    padding:0;
 }
 
 
@@ -561,6 +573,7 @@ h3{
     flex-direction: column;
     width:40vw;
     align-self:center;
+    margin-right:5vw;
 }
 h4{
     font-family: "GT-Planar";
@@ -1216,6 +1229,41 @@ border: 2px solid #8fdcc2;
   align-items: flex-start;
 }
 
+.lighttheme .DownloadButton{
+  background-color:#025a4e;
+}
+
+.darktheme .DownloadButton{
+ background-color:#cfe0bc;
+ color:#025a4e;
+}
+
+.lighttheme .DownloadButton h8{
+ color:#cfe0bc;
+}
+
+.darktheme .DownloadButton h8{
+ color:#025a4e;
+}
+
+.DownloadButtondiv{
+  display:flex;
+  justify-content:center;
+}
+
+.DownloadButton h8{
+  margin:0;
+  padding:0;
+}
+
+
+.DownloadButton{
+  border-radius:30px;
+  width:20vw;
+  height:5vh;
+  border:none;
+}
+
 .Playboxes,
 .Playboxes1 {
   margin-bottom: 0;     /* reset default spacing */
@@ -1257,12 +1305,58 @@ border: 2px solid #8fdcc2;
   display:flex;
  border-radius:10px;
  padding:1.5vw;
- height:20vh;
+ height:30vh;
+ padding:0;
  width:40vw;
-   align-items: flex-start;
+   align-items: center;
    margin-top:0px;
    flex-wrap:wrap;
 }
+
+.BoxExperience{
+  display:flex;
+ border-radius:10px;
+ height:40vh;
+ width:80vw;
+ margin:0 auto; 
+ margin-bottom:3vh;
+ padding:0;
+   align-items: center;
+   flex-wrap:wrap;
+}
+
+.BoxQuote{
+  display:flex;
+  flex-direction: column;
+ border-radius:10px;
+ height:60vh;
+ width:45vw;
+ margin:0 auto; 
+ margin-bottom:3vh;
+ padding:0;
+   align-items: center;
+}
+
+.line1{
+  height:2px;
+  background-color: #234138;
+ width:86vw;
+ margin-bottom:5vh;
+}
+.line2{
+  height:2px;
+  background-color: #234138;
+ width:86vw;
+ margin-top:5vh;
+ margin-bottom: 5vh;
+}
+ 
+ .darktheme .line1{
+  background-color: #d4ede4;
+ }
+  .darktheme .line2{
+  background-color: #d4ede4;
+ }
 
 
 .lighttheme .BoxOne{
@@ -1272,6 +1366,26 @@ border: 2px solid #8fdcc2;
 
 
 .darktheme .BoxOne{
+  background-color:#234138;
+}
+
+.lighttheme .BoxExperience{
+  background-color:#f4eee5;
+}
+
+
+
+.darktheme .BoxExperience{
+  background-color:#234138;
+}
+
+.lighttheme .BoxQuote{
+  background-color:#f4eee5;
+}
+
+
+
+.darktheme .BoxQuote{
   background-color:#234138;
 }
 
@@ -1301,6 +1415,16 @@ border: 2px solid #8fdcc2;
     transition: transform 0.3s ease;
 }
 
+.BoxExperience:hover{
+  transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.BoxQuote:hover{
+  transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
 .Box3:hover{
   transform: translateY(-10px);
     transition: transform 0.3s ease;
@@ -1316,6 +1440,22 @@ border: 2px solid #8fdcc2;
     width:30vw;
 }
 
+.BoxExperienceTextText  {
+  display:flex;
+  flex-direction:column;
+    align-items: center;
+    justify-self:center;
+    width:60vw;
+}
+
+.BoxQuoteTextText  {
+  display:flex;
+  flex-direction:column;
+    align-items: center;
+    justify-self:center;
+    width:40vw;
+}
+
 .BoxOneText{
   display:flex;
   gap:1vw;
@@ -1324,9 +1464,30 @@ border: 2px solid #8fdcc2;
 
 .circular_image img{
  border-radius: 50%;
- width:10vw;
+ width:8vw;
   align-items: center;
   
+}
+
+.circular_image img{
+ border-radius: 50%;
+ width:8vw;
+  align-items: center;
+  
+}
+
+.experience_image{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  margin-left:2vw;
+}
+
+
+.experience_image img{
+ border-radius: 50%;
+ width:10vw;
+ height:10vw;
 }
 
 .BigBoxImage{
@@ -1357,6 +1518,12 @@ border: 2px solid #8fdcc2;
   justify-content:center;
   flex-direction:column;
 }
+
+.Experienceboxes{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
 .Playboxes1{
    justify-content:center;
   flex-direction:column;
@@ -1378,13 +1545,26 @@ Playboxes3{
   align-items: center;
 }
 
+.AboutMeHeader{
+   width:80vw; 
+   padding:0;
+   margin-top:0;
+   text-align: left; 
+}
+
+.AboutMeDescription{
+  width:80vw;
+}
+
 .AboutMeText{
   width:80vw;
   padding:15px 5px;
+  justify-content:center;
 }
 .Ciaran{
   height:30vh;
   width:auto;
+  
 }
 
 body{overflow:visible;}
@@ -1451,6 +1631,11 @@ h8{
    align-items:center;
 }
 
+.BoxExperience{
+  padding-top:10px;
+  flex-direction: column;
+}
+
 .BoxOneText{
   flex-direction:column;
   height:100%;
@@ -1507,6 +1692,16 @@ h8{
 
 }
 
+.BoxQuote{
+  width:80vw;
+  height:50vh;
+}
+
+.BoxQuoteTextText{
+ width:75vw;
+}
+
+
 }
 
 @media (max-width:900px){
@@ -1516,6 +1711,10 @@ h8{
 
   .Verification{
     display:none;
+  }
+
+  .experience_image h2{
+    font-size:15px;
   }
 
   .ProgressBar{
