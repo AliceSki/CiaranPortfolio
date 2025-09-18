@@ -25,6 +25,7 @@ h2{
     font-weight: 200;
 }
 
+
 .hoverText{
    font-family: "GT-Planar";
     font-size: 1.5vw;
@@ -856,10 +857,8 @@ h1:first-of-type {
   border-radius: 20px;
   display:flex;
   flex-direction:column;
-  row-gap:3vh;
   align-items:center;
   justify-content:center;
-  gap:2vh;
   background-color:white;
   overflow:hidden;
 }
@@ -875,6 +874,11 @@ height:100%;
  background-color:white;
 border-radius: 20px;
 overflow:hidden;
+}
+
+.AwardImage img{
+  height:100%;
+  width:auto;
 }
 
 .AwardImage{
@@ -1524,11 +1528,42 @@ border: 2px solid #8fdcc2;
   width:auto;
 }
 
+.BoxOneTextText {
+  width:60vw;
+}
+
+boxonetext{
+  width:75vw;
+}
+
+#AwardImageThree{
+  height:90%;
+}
+
+#AwardImageFour{
+  height:90%;
+}
+
+#AwardImageFive{
+  height:90%;
+}
+
 .Playboxes{
   justify-content:center;
   flex-direction:column;
 }
 
+.Playboxes h2{
+  font-size:15px;
+}
+
+.Playboxes h8{
+  font-size:15px;
+}
+
+.circular_image img{
+  width:12vw;
+}
 .Experienceboxes{
   display:flex;
   justify-content:center;
@@ -1636,29 +1671,12 @@ h8{
 
 .BoxOne{
    width:80vw;
-   height:30vh;
-   flex-direction:column;
-   align-items:center;
+   height:20vh;
 }
 
 .BoxExperience{
   padding-top:10px;
   flex-direction: column;
-}
-
-.BoxOneText{
-  flex-direction:column;
-  height:100%;
-  align-items:center;
-
-}
-
-.BoxOneTextText{
-  flex-direction:column;
-  padding-bottom:0px;
-  margin-bottom:0px;
-  width:70vw;
-  justify-content:center;
 }
 
 .circular_image{
