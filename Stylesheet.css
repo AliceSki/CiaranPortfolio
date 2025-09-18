@@ -877,6 +877,11 @@ border-radius: 20px;
 overflow:hidden;
 }
 
+.AwardImage{
+  height:100%;
+  width:auto;
+}
+
 .ToolPage{
     width:80%;
   height:80%;
@@ -1512,6 +1517,11 @@ border: 2px solid #8fdcc2;
   width:100%;
   max-width:100%;
     overflow-x: hidden;
+}
+
+.AwardImage{
+  height:85%;
+  width:auto;
 }
 
 .Playboxes{
