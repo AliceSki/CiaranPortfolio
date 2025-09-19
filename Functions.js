@@ -42,6 +42,7 @@ const currentPath = window.location.pathname.split("/").pop();
 if (!currentPath) currentPath = "index.html";  
 const navButtons = document.querySelectorAll("nav button");
 
+
 navButtons.forEach(btn => {
   const target = btn.getAttribute("onclick"); 
   // extract page name from onclick string
