@@ -548,13 +548,24 @@ body {
    margin-top:0; 
    width:30vw;
    text-align: left; 
+
+}
+
+.CiaranImage{
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .AboutMeHeader{
   width:30vw;
 }
+
 .Ciaran {
-    width:35vw;
+    height:70vh;
+    width: auto;
     border-radius:50% 50% 0% 0%;
     margin:0;
     padding:0;
@@ -597,6 +608,10 @@ h5{
     gap: 20px; 
     padding-left: 5%;
     padding-right: 10%;
+}
+
+.experience_image{
+  justify-content:center;
 }
 .experience{
     display:flex;
@@ -1338,7 +1353,7 @@ border: 2px solid #8fdcc2;
   display:flex;
   flex-direction: column;
  border-radius:10px;
- height:60vh;
+ height:70vh;
  width:45vw;
  margin:0 auto; 
  margin-bottom:3vh;
@@ -1463,6 +1478,12 @@ border: 2px solid #8fdcc2;
     align-items: center;
     justify-self:center;
     width:40vw;
+}
+
+.BoxQuoteHeader{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
 .BoxOneText{
@@ -1722,7 +1743,7 @@ h8{
 
 .BoxQuote{
   width:80vw;
-  height:50vh;
+  height:40vh;
 }
 
 .BoxQuoteTextText{
