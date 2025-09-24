@@ -38,24 +38,28 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const currentPath = window.location.pathname.split("/").pop();
-if (!currentPath) currentPath = "index.html";  if (!currentPath) {
-  currentPath = "index.html";
-} else if (!currentPath.endsWith(".html")) {
-  // if it doesn’t already end with .html, add it
-  currentPath += ".html";
-}
+let currentPath = window.location.pathname.split("/").pop();
+
+// default to index if empty
+if (!currentPath) currentPath = "index.html";
+
+// strip off the .html part (if it’s there)
+const currentName = currentPath.replace(".html", "");
+
 const navButtons = document.querySelectorAll("nav button");
 
-
 navButtons.forEach(btn => {
-  const target = btn.getAttribute("onclick"); 
-  // extract page name from onclick string
-  if (target && target.includes(currentPath)) {
-    btn.classList.add("active");
+  const target = btn.getAttribute("onclick");
+
+  if (target) {
+    // also strip .html from the onclick string
+    const targetName = target.replace(".html", "");
+
+    if (targetName.includes(currentName)) {
+      btn.classList.add("active");
+    }
   }
 });
-
 
 
 
