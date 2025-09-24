@@ -39,26 +39,21 @@ window.addEventListener("scroll", () => {
 });
 
 let currentPath = window.location.pathname.split("/").pop();
+if (!currentPath) currentPath = "index.html";  
 
-// default to index if empty
-if (!currentPath) currentPath = "index";
-
-// remove .html if it exists
-currentPath = currentPath.replace(".html", "");
+// normalize to lowercase
+currentPath = currentPath.toLowerCase();
 
 const navButtons = document.querySelectorAll("nav button");
 
 navButtons.forEach(btn => {
-  const target = btn.getAttribute("onclick");
-
-  if (target) {
-    // grab whatever is inside quotes, like 'about.html'
-    const match = target.match(/'([^']+)'/);
-    if (match) {
-      let targetName = match[1].replace(".html", "");
-      if (targetName === currentPath) {
-        btn.classList.add("active");
-      }
-    }
+  const target = btn.getAttribute("onclick"); 
+  if (target && target.toLowerCase().includes(currentPath)) {
+    btn.classList.add("active");
   }
 });
+
+
+
+
+
