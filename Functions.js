@@ -38,9 +38,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let currentPath = window.location.pathname.split("/").pop() || "index.html";
+let path = window.location.pathname;
 
-// Ensure .html extension
+// Remove trailing slash
+if (path.endsWith("/")) {
+  path = path.slice(0, -1);
+}
+
+let currentPath = path.split("/").pop() || "index";
+
+// Normalize to .html
 if (!currentPath.includes(".")) {
   currentPath = currentPath + ".html";
 }
@@ -48,11 +55,19 @@ if (!currentPath.includes(".")) {
 const navButtons = document.querySelectorAll("nav button");
 
 navButtons.forEach(btn => {
-  const target = btn.getAttribute("onclick");
-  if (target && target.includes(currentPath)) {
+  const page = btn.dataset.page;
+
+  // navigation when clicked
+  btn.addEventListener("click", () => {
+    window.location.href = "/" + page;
+  });
+
+  // highlight active
+  if (page === currentPath) {
     btn.classList.add("active");
   }
 });
+
 
 
 
