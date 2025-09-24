@@ -38,18 +38,22 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const currentPath = window.location.pathname.split("/").pop();
-if (!currentPath) currentPath = "index.html";  
+let currentPath = window.location.pathname.split("/").pop() || "index.html";
+
+// Ensure .html extension
+if (!currentPath.includes(".")) {
+  currentPath = currentPath + ".html";
+}
+
 const navButtons = document.querySelectorAll("nav button");
 
-
 navButtons.forEach(btn => {
-  const target = btn.getAttribute("onclick"); 
-  // extract page name from onclick string
+  const target = btn.getAttribute("onclick");
   if (target && target.includes(currentPath)) {
     btn.classList.add("active");
   }
 });
+
 
 
 
