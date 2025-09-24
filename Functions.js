@@ -38,37 +38,23 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let path = window.location.pathname;
-
-// Remove trailing slash
-if (path.endsWith("/")) {
-  path = path.slice(0, -1);
+const currentPath = window.location.pathname.split("/").pop();
+if (!currentPath) currentPath = "index.html";  if (!currentPath) {
+  currentPath = "index.html";
+} else if (!currentPath.endsWith(".html")) {
+  // if it doesn’t already end with .html, add it
+  currentPath += ".html";
 }
-
-let currentPath = path.split("/").pop() || "index";
-
-// Normalize to .html
-if (!currentPath.includes(".")) {
-  currentPath = currentPath + ".html";
-}
-
 const navButtons = document.querySelectorAll("nav button");
 
+
 navButtons.forEach(btn => {
-  const page = btn.dataset.page;
-
-  // navigation when clicked
-  btn.addEventListener("click", () => {
-    window.location.href = "/" + page;
-  });
-
-  // highlight active
-  if (page === currentPath) {
+  const target = btn.getAttribute("onclick"); 
+  // extract page name from onclick string
+  if (target && target.includes(currentPath)) {
     btn.classList.add("active");
   }
 });
-
-
 
 
 
