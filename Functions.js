@@ -41,10 +41,10 @@ window.addEventListener("scroll", () => {
 let currentPath = window.location.pathname.split("/").pop();
 
 // default to index if empty
-if (!currentPath) currentPath = "index.html";
+if (!currentPath) currentPath = "index";
 
-// strip off the .html part (if it’s there)
-const currentName = currentPath.replace(".html", "");
+// remove .html if it exists
+currentPath = currentPath.replace(".html", "");
 
 const navButtons = document.querySelectorAll("nav button");
 
@@ -52,16 +52,13 @@ navButtons.forEach(btn => {
   const target = btn.getAttribute("onclick");
 
   if (target) {
-    // also strip .html from the onclick string
-    const targetName = target.replace(".html", "");
-
-    if (targetName.includes(currentName)) {
-      btn.classList.add("active");
+    // grab whatever is inside quotes, like 'about.html'
+    const match = target.match(/'([^']+)'/);
+    if (match) {
+      let targetName = match[1].replace(".html", "");
+      if (targetName === currentPath) {
+        btn.classList.add("active");
+      }
     }
   }
 });
-
-
-
-
-
