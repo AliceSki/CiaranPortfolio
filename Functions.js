@@ -38,20 +38,25 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let currentPath = window.location.pathname.split("/").pop();
-if (!currentPath) currentPath = "index.html";  
+let currentPath = window.location.pathname.split("/").pop().toLowerCase();
+if (!currentPath) currentPath = "index";
 
-// normalize to lowercase
-currentPath = currentPath.toLowerCase();
+// strip .html if it exists
+currentPath = currentPath.replace(".html", "");
 
 const navButtons = document.querySelectorAll("nav button");
 
 navButtons.forEach(btn => {
   const target = btn.getAttribute("onclick"); 
-  if (target && target.toLowerCase().includes(currentPath)) {
-    btn.classList.add("active");
+  if (target) {
+    let targetName = target.toLowerCase();
+    targetName = targetName.replace(".html", "");
+    if (targetName.includes(currentPath)) {
+      btn.classList.add("active");
+    }
   }
 });
+
 
 
 
